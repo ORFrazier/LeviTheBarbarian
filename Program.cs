@@ -1,0 +1,780 @@
+﻿using System;
+
+namespace LevitheBarbarian
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            gameTitle();
+        }
+        public static void gameTitle()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Clear();
+
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                                                                                                                                        ");
+            Console.WriteLine("                         ██▓    ▓█████ ██▒   █▓ ██▓   ▄▄▄█████▓ ██░ ██ ▓█████     ▄▄▄▄    ▄▄▄       ██▀███   ▄▄▄▄    ▄▄▄       ██▀███   ██▓ ▄▄▄       ███▄    █ ");
+            Console.WriteLine("                         ▓██▒    ▓█   ▀▓██░   █▒▓██▒   ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀    ▓█████▄ ▒████▄    ▓██ ▒ ██▒▓█████▄ ▒████▄    ▓██ ▒ ██▒▓██▒▒████▄     ██ ▀█   █ ");
+            Console.WriteLine("                         ▒██░    ▒███   ▓██  █▒░▒██▒   ▒ ▓██░ ▒░▒██▀▀██░▒███      ▒██▒ ▄██▒██  ▀█▄  ▓██ ░▄█ ▒▒██▒ ▄██▒██  ▀█▄  ▓██ ░▄█ ▒▒██▒▒██  ▀█▄  ▓██  ▀█ ██▒");
+            Console.WriteLine("                         ▒██░    ▒▓█  ▄  ▒██ █░░░██░   ░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄    ▒██░█▀  ░██▄▄▄▄██ ▒██▀▀█▄  ▒██░█▀  ░██▄▄▄▄██ ▒██▀▀█▄  ░██░░██▄▄▄▄██ ▓██▒  ▐▌██▒");
+            Console.WriteLine("                         ░██████▒░▒████▒  ▒▀█░  ░██░     ▒██▒ ░ ░▓█▒░██▓░▒████▒   ░▓█  ▀█▓ ▓█   ▓██▒░██▓ ▒██▒░▓█  ▀█▓ ▓█   ▓██▒░██▓ ▒██▒░██░ ▓█   ▓██▒▒██░   ▓██░");
+            Console.WriteLine("                         ░ ▒░▓  ░░░ ▒░ ░  ░ ▐░  ░▓       ▒ ░░    ▒ ░░▒░▒░░ ▒░ ░   ░▒▓███▀▒ ▒▒   ▓▒█░░ ▒▓ ░▒▓░░▒▓███▀▒ ▒▒   ▓▒█░░ ▒▓ ░▒▓░░▓   ▒▒   ▓▒█░░ ▒░   ▒ ▒ ");
+            Console.WriteLine("                         ░ ░ ▒  ░ ░ ░  ░  ░ ░░   ▒ ░       ░     ▒ ░▒░ ░ ░ ░  ░   ▒░▒   ░   ▒   ▒▒ ░  ░▒ ░ ▒░▒░▒   ░   ▒   ▒▒ ░  ░▒ ░ ▒░ ▒ ░  ▒   ▒▒ ░░ ░░   ░ ▒░");
+            Console.WriteLine("                             ░ ░      ░       ░░   ▒ ░     ░       ░  ░░ ░   ░       ░    ░   ░   ▒     ░░   ░  ░    ░   ░   ▒     ░░   ░  ▒ ░  ░   ▒      ░   ░ ░ ");
+            Console.WriteLine("                             ░  ░   ░  ░     ░   ░               ░  ░  ░   ░  ░    ░            ░  ░   ░      ░            ░  ░   ░      ░        ░  ░         ░ ");
+            string s = "Press ENTER to begin";
+            Console.SetCursorPosition((Console.WindowWidth - s.Length) / 2, Console.CursorTop);
+            Console.WriteLine(s);
+            Console.ReadLine();
+            Console.Clear();
+            first();
+        }
+        public static void first()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Clear();
+
+            string choice;
+
+            Console.WriteLine("You are Levi the Barbarian, savage warrior from the small village of Normia. After an evening of mild debauchery and howling at the gods, you awaken to panicked knocks on your hut's door.");
+            Console.WriteLine("What will you do?");
+            Console.WriteLine("1. Go back to bed. I'ts probably nothing.");
+            Console.WriteLine("2. Go to the door and see what's going on.");
+            Console.WriteLine("3. Cautiously approach the door. It could be anyone!");
+            Console.Write("Choice: ");
+            choice = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch (choice)
+            {
+                case "1":
+                case "Go back to bed.":
+                case "bed":
+                case "Go back to bed":
+                case "back to bed":
+                case "Back to bed":
+                    {
+                        Console.WriteLine("Ignoring the calls of the panicked villagers, you roll back into the prickly warmth of your straw bed.");
+                        Console.WriteLine("Unfortunately, in your deep, deserved slumber, you meet an undeserved fate.");
+                        Console.WriteLine("Unaware of the fires comsuming your village, you become part of the kindling. Your legend ends here.");
+                        Console.WriteLine("Press ENTER to continue.");
+                        Console.ReadLine();
+                        gameOverfirstchoice();
+                        break;
+                    }
+                case "2":
+                case "Go to door":
+                case "Go to the door.":
+                case "Go to the door":
+                case "see what's going on":
+                    {
+                        Console.WriteLine("Clumisly rushing to the door, you trip over your favorite collection of skulls, falling headfirst into your weapons.");
+                        Console.WriteLine("Normally a weapons cache is a good thing for barbarians.");
+                        Console.WriteLine("However, your clumsiness has sent your favorite axe right through your face. You die immediately, and the village burns.");
+                        Console.WriteLine("Press ENTER to continue.");
+                        Console.ReadLine();
+                        gameOverfirstchoice();
+                        break;
+                    }
+                case "3":
+                case "Cautiously approach the door.":
+                case "cautiously approach the door":
+                case "Cautiously approach the door":
+                case "Use caution":
+                case "Cautiously approach":
+                case "Cautiously approach.":
+                    {
+                        Console.WriteLine("Using your wits, you approach your door quietly, dodging some disheveled skulls on the ground.");
+                        Console.WriteLine("Making a mental note to organize them later, you reach your wooden door with ease.");
+                        Console.WriteLine("'Who goes there!'you demand. 'Tis I, little Pat from the butcher's shop!', calls a meek voice from the other side of the door.");
+                        Console.WriteLine("'Bandits are attacking the village!', he yells. 'Won't you save us, mighty Levi?'");
+                        Console.WriteLine("Ever seeking glory, you eagerly agree, grabbing your favorite axe before swinging the door open, charging to meet your foes head on!");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        second();
+                        break;
+
+                    }
+                default:
+                    {
+                        Console.WriteLine("What sort of command is that? Try again!");
+                        Console.WriteLine("Press ENTER to try again.");
+                        first();
+                        break;
+                    }
+            }
+        }
+        public static void second()
+        {
+            Random rnd = new Random();
+            string[] secOptions = { "Masked bandits covered in furs and leather are stealing horses! They appear to have bows.",
+                "Masked bandits, wearing nothing but bear furs and brandishing short swords, are attacking the village tavern!",
+                "Masked bandits, wearing wolf pelts and carrying spears, are attacking old man Timmy's hut!"};
+            int randomNumber = rnd.Next(0, 3);
+            string secText = secOptions[randomNumber];
+
+            string secChoice;
+
+            Console.WriteLine(secText);
+            Console.WriteLine("Your village is in chaos! Do you choose to attack?; Yes or No?");
+            Console.Write("Choice: ");
+            secChoice = Console.ReadLine().ToLower();
+
+            if (secChoice == "y" || secChoice == "yes")
+            {
+                third();
+            }
+            else if (secChoice == "n" || secChoice == "no")
+            {
+                Console.WriteLine("Choosing a strategic withdrawl, you reposition youself away from the fighting and chaos.");
+                Console.WriteLine("Noticing your actions, the very gods you curse punish you for your actions, turning you into a small rodent.");
+                Console.WriteLine("Promptly devoured by a stray cat, your legend ends in a whimper as the village is destroyed.");
+                Console.WriteLine("Press ENTER to continue.");
+                Console.ReadLine();
+                Console.Clear();
+                gameOvervillagebeginning();
+
+
+
+            }
+            else
+            {
+                Console.WriteLine("Bandits are attacking and you type that? Try again!");
+                Console.WriteLine("Press ENTER to try again.");
+                second();
+
+            }
+        }
+        public static void third()
+        {
+            int age;
+
+            Console.Clear();
+            Console.WriteLine("With a mighty yell, you charge your foes, who don't see you coming.");
+            Console.WriteLine("Axe raised, you slaughter the bandits who stand before you, easily overcoming their weak combat skills.");
+            Console.WriteLine("However, during the slaughter, your weapon is damaged!");
+            Console.WriteLine("Though it be the middle of the night, you appraoch the vilalge blacksmith, who is tossing the still warm bodies of bandits into a wagon.");
+            Console.WriteLine("Seeing you approach, he nods in your direction, taking a swig of foul smelling ale");
+            Console.WriteLine("'We're lucky to have you here, Levi' he states. 'There's no way I could've handled that many alone.");
+            Console.WriteLine("Before you get a chance to speak, he moves his torch closer, eyeing your splintered weapon");
+            Console.WriteLine("'Shame about your axe. You must've had it for years. How many years, if you don't mind telling me?' he inquires.");
+            Console.WriteLine("Considering this for a moment, you think of how to answer.");
+            Console.Write("Number of years you've had your axe: ");
+
+
+            int.TryParse(Console.ReadLine(), out age);
+
+            if (age > 11)
+            {
+                Console.Clear();
+                Console.WriteLine("The smith is unamused with your lies, as are the gods. However, you never get a chance to lie again.");
+                Console.WriteLine("The smithy drops the torch by accident, where it bounces towards the horses attached to the wagon full of bandit bodies!");
+                Console.WriteLine("Uttery terrified, the horses neigh in terror.");
+                Console.WriteLine("Catching you unprepared, the wagon, improperly attached to the beasts, topples over on you.");
+                Console.WriteLine("The weight of the wagon and bodies crushes your ribs, and you suffocate in your own blood.");
+                Console.WriteLine("Though not a legend, the village will remember your deeds fondly for a couple weeks, naming a bad drink after you.");
+                Console.WriteLine("Press ENTER to continue");
+                Console.ReadLine();
+                Console.Clear();
+                gameOverfirstchoice();
+
+            }
+            else
+            {
+                Console.Clear();
+                string choicetwo;
+                Console.WriteLine("'Impressive! I rarely have seen such craftsmanship in these parts'.");
+                Console.WriteLine("Taking the weapon from you, he eyes the broken item all over.");
+                Console.WriteLine("'Yeah, I can fix it. But you'll need to wait a few days.'");
+                Console.WriteLine("Begrudgingly, you have no choice but to accept. However, with a collection of fine blades and clubs still at home, you don't fret.");
+                Console.WriteLine("On your walk home, you are stopped by the local shaman, who's very much in a panic. Walking up to you and poking your chisled chest with his long, bony finger, he scowls.");
+                Console.WriteLine("'You! Barbarian! You must help me, else this village and all who live here will face certain doom!'");
+                Console.WriteLine("This seems pretty serious! Will you help?");
+                choicetwo = Console.ReadLine().ToLower();
+                Console.Clear();
+                switch (choicetwo)
+                {
+                    case "yes":
+                    case "y":
+                    case "Yes":
+                        {
+                            Console.WriteLine("The shaman grins, his mouth devoid of teeth. 'I knew you were the right man for the job!");
+                            Console.WriteLine("'The time of harvest approaches, but without a proper tribute to the gods, we are surely doomed to starve.");
+                            Console.WriteLine("I need you to travel through the Forest of Many Paths and find the ancient stronghold, for within is the Golden Skull!");
+                            Console.WriteLine("Bring this skull back to me, so I may bless our village's crops and ensure the harvest!'");
+                            Console.WriteLine("You consider this for a moment.");
+                            Console.WriteLine("As a barbarian, you can appreciate a man wanting more skulls for their collection. Also liking the idea of a bigger harvest, you agree to bring back this golden skull.");
+                            Console.WriteLine("Your adventure is about to begin!");
+                            Console.WriteLine("Press ENTER to continue");
+                            Console.ReadLine();
+                            Console.Clear();
+                            gototheforest();
+                            break;
+                        }
+                    case "no":
+                    case "No":
+                    case "n":
+                        {
+                            Console.WriteLine("The shaman scowls, cursing you in more languages than you care to count. However, you care little for the puny words of a smelly old man.");
+                            Console.WriteLine("After a few days, you retrive your axe, now good as new! You also learn the shaman has left the village.");
+                            Console.WriteLine("Days turn into weeks, and weeks to months, and nothing of importance happens. However, more and more villagers begin leaving as the crops continue to fail.");
+                            Console.WriteLine("Eventually, even you are forced to leave your home. With no food, you turn to living off the land. Within five minutes of entering the forest, you are bitten on the ankle by a venomous snake.");
+                            Console.WriteLine("With no shaman to remove the poison, and no villagers to tend to your needs, you die a slow death undeserving of a mighty barbarian");
+                            Console.WriteLine("Press ENTER to continue");
+                            Console.ReadLine();
+                            Console.Clear();
+                            gameOvershameful();
+                            break;
+                        }
+                }
+
+
+            }
+        }
+        public static void gameOverfirstchoice()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Clear();
+
+            Console.Clear();
+            Console.WriteLine(" How unfortunate. You've already failed before leaving the village!");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  ");
+            Console.WriteLine(" ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒");
+            Console.WriteLine("▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒");
+            Console.WriteLine("░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  ");
+            Console.WriteLine("░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒");
+            Console.WriteLine(" ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░");
+            Console.WriteLine("  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░");
+            Console.WriteLine("Press ENTER to try again");
+            Console.ReadLine();
+            Console.Clear();
+            gameTitle();
+        }
+        public static void youWin()
+        {
+
+        }
+        public static void gototheforest()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.Clear();
+
+            Console.WriteLine("                                              Will you survive                                              ");
+            Console.WriteLine("                                                                                            ");
+            Console.WriteLine("                                                                                            ");
+            Console.WriteLine("                                                                                            ");
+            Console.WriteLine("     ▄▄▄█████▓ ██░ ██ ▓█████      █████▒▒█████   ██▀███  ▓█████   ██████ ▄▄▄█████▓          ");
+            Console.WriteLine("     ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀    ▓██   ▒▒██▒  ██▒▓██ ▒ ██▒▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒          ");
+            Console.WriteLine("     ▒ ▓██░ ▒░▒██▀▀██░▒███      ▒████ ░▒██░  ██▒▓██ ░▄█ ▒▒███   ░ ▓██▄   ▒ ▓██░ ▒░          ");
+            Console.WriteLine("     ░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄    ░▓█▒  ░▒██   ██░▒██▀▀█▄  ▒▓█  ▄   ▒   ██▒░ ▓██▓ ░           ");
+            Console.WriteLine("       ▒██▒ ░ ░▓█▒░██▓░▒████▒   ░▒█░   ░ ████▓▒░░██▓ ▒██▒░▒████▒▒██████▒▒  ▒██▒ ░           ");
+            Console.WriteLine("       ▒ ░░    ▒ ░░▒░▒░░ ▒░ ░    ▒ ░   ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░             ");
+            Console.WriteLine("                                                                                            ");
+            Console.WriteLine("      ▒█████    █████▒                                                                      ");
+            Console.WriteLine("     ▒██▒  ██▒▓██   ▒                                                                       ");
+            Console.WriteLine("     ▒██░  ██▒▒████ ░                                                                       ");
+            Console.WriteLine("     ▒██   ██░░▓█▒  ░                                                                       ");
+            Console.WriteLine("     ░ ████▓▒░░▒█░                                                                          ");
+            Console.WriteLine("                                                                                       ");
+            Console.WriteLine("      ███▄ ▄███▓ ▄▄▄       ███▄    █▓██   ██▓    ██▓███   ▄▄▄     ▄▄▄█████▓ ██░ ██   ██████ ");
+            Console.WriteLine("     ▓██▒▀█▀ ██▒▒████▄     ██ ▀█   █ ▒██  ██▒   ▓██░  ██▒▒████▄   ▓  ██▒ ▓▒▓██░ ██▒▒██    ▒ ");
+            Console.WriteLine("     ▓██    ▓██░▒██  ▀█▄  ▓██  ▀█ ██▒ ▒██ ██░   ▓██░ ██▓▒▒██  ▀█▄ ▒ ▓██░ ▒░▒██▀▀██░░ ▓██▄   ");
+            Console.WriteLine("     ▒██    ▒██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒ ░ ▐██▓░   ▒██▄█▓▒ ▒░██▄▄▄▄██░ ▓██▓ ░ ░▓█ ░██   ▒   ██");
+            Console.WriteLine("     ▒██▒   ░██▒ ▓█   ▓██▒▒██░   ▓██░ ░ ██▒▓░   ▒██▒ ░  ░ ▓█   ▓██▒ ▒██▒ ░ ░▓█▒░██▓▒██████▒▒");
+            Console.WriteLine("     ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒   ██▒▒▒    ▒▓▒░ ░  ░ ▒▒   ▓▒█░ ▒ ░░    ▒ ░░▒░▒▒ ▒▓▒ ▒ ░");
+            Console.WriteLine("     ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░▓██ ░▒░    ░▒ ░       ▒   ▒▒ ░   ░     ▒ ░▒░ ░░ ░▒  ░ ░");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            forestpartone();
+
+
+        }
+        public static void forestpartone()
+        {
+            Console.WriteLine("After a quick rest, you grab your finest wooden club from your hut and venture forward, deep into the forest.");
+            Console.WriteLine("Knowing little of which direction to go, you rely on your keen instincts. Discovering a path, you follow it.");
+            Console.WriteLine("This works for a time. However, soon the path diverges into four trails. Which one will you choose?");
+
+            string choicethree;
+
+            Console.WriteLine("1: The path forward. It looks steady and well-traveled.");
+            Console.WriteLine("2: The path to your left. It appears to follow a nearby stream.");
+            Console.WriteLine("3: The path to your right. It goes up a muddy, mossy hill and dissappears.");
+            Console.WriteLine("4: A barely visable game trail. This could lead you to a tasty brekfast!");
+            Console.Write("Choice: ");
+            choicethree = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch (choicethree)
+            {
+                case "1":
+                case "The path forward":
+                case "the path forward":
+                case "path forward":
+                case "Path forward":
+                    {
+                        string choicefour;
+
+                        Console.WriteLine("What were you thinking? The best path is the one forward. You press on without a second thought to the diverging paths.");
+                        Console.WriteLine("Soon, it becomes clear that this path has been used very recently, as a neat pile of delicious, roasted meat lays in the center of the dirt road.");
+                        Console.WriteLine("Another man's lost, steaming meat is another man's breakfast!");
+                        Console.WriteLine("Do you wish to take the meat? Yes or No");
+                        Console.Write("Choice: ");
+                        choicefour = Console.ReadLine().ToLower();
+                        Console.Clear();
+                        switch (choicefour)
+
+                        {
+                            case "yes":
+                            case "Yes":
+                            case "y":
+                            case "Y":
+                                {
+                                    Console.WriteLine("Throwing caution to the wind, you grab the slab of roasted meat from the road. What luck! It's pork.");
+                                    Console.WriteLine("Delighted, you lean your club next to the nearest tree and happily devour the free meal.");
+                                    Console.WriteLine("What a great decision you've made! You feel refreshed and ready for battle!");
+                                    Console.WriteLine("Press ENTER to continue");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    forestpathporkeaten();
+                                    break;
+                                }
+                            case "no":
+                            case "No":
+                            case "n":
+                            case "N":
+                                {
+                                    Console.WriteLine("Suspicion gets the better of you. Who would leave a delicious piece of meat out in the open?");
+                                    Console.WriteLine("Avoiding the delicious smelling slab, you press onward deeper into the forest.");
+                                    Console.WriteLine("Press ENTER to continue");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    forestpathporknoteaten();
+                                    break;
+
+                                }
+
+                        }
+
+                    }
+                    break;
+                case "2":
+                case "The path to your left":
+                case "left path":
+                case "the path to your left":
+                    {
+                        Console.WriteLine("Following a stream seems like the best choice. Carefully working your way down the rocky slope, you begin following the gentle stream deeper into the forest.");
+                        Console.WriteLine("However, it soon becomes apparent that you're not alone.");
+                        Console.WriteLine("Not so far off in the distance, you hear the sounds of clanking metal against stone.");
+                        Console.WriteLine("Someone in armor seems to be following you!");
+                        Console.WriteLine("With plenty of time to prepare, you begin to set a trap.");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        forestpathporkeaten();
+                        break;
+                    }
+                case "3":
+                case "Path to your right":
+                case "right path":
+                case "Right path":
+                    {
+                        Console.WriteLine("A wise man once said the right path is always the hardest to take. In this case, quite literally.");
+                        Console.WriteLine("Tossing your club up the steep, muddy hill, you use both hands to dig into the moss and exposed roots of the trees to pull yourself upward.");
+                        Console.WriteLine("Sure, your chisled chest is now layered in mud, but who cares? Your job is to retrieve a golden skull, not look pretty.");
+                        Console.WriteLine("After some effort, you manage to pull yourself up the hill. But what's that? There's a small camp nearby!");
+                        Console.WriteLine("Finding your club, you approach from the treeline.");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        forestrightpathtakencampencounter();
+                        break;
+
+                    }
+                case "4":
+                case "game trail":
+                case "barely visible game trail":
+                case "Barely visible game trail":
+                    {
+                        string choicefive;
+
+                        Console.WriteLine("Your keen senses, mainly your stomach, have alerted you to a barely visible game trail zig-zagging through the foliage.");
+                        Console.WriteLine("Considering yourself a master tracker, you consider following the trail. Surely there must be something delicious to hunt!");
+                        Console.WriteLine("You travel deeper into the forest, following the trail until it leads you to a cave.");
+                        Console.WriteLine("What luck! Now your prey is trapped.Will you wait for it to exit the cave, or attack right away?");
+                        Console.WriteLine("Attack or Wait?");
+                        Console.Write("Choice: ");
+                        choicefive = Console.ReadLine().ToLower();
+                        Console.Clear();
+                        switch (choicefive)
+                        {
+                            case "Attack":
+                            case "attack":
+                                {
+                                    Console.WriteLine("What sort of barbarian waits? With a mighty roar, you charge into the dark cave.");
+                                    Console.WriteLine("Unaware of the slippery rocks inside, you fall flat on your back as your club goes flying into the air. ");
+                                    Console.WriteLine("The dense weapon slams into a particularly pointy stalactite, which falls directly into your chest.");
+                                    Console.WriteLine("You die, never knowing what meal you could've eaten.");
+                                    Console.WriteLine("Press ENTER to continue");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    gameOvershameful();
+                                    break;
+                                }
+                            case "Wait":
+                            case "wait":
+                                {
+                                    Console.WriteLine("You choose to wait patiently for your quarry, eagerly preparing to attack. But what sort of beast are you hunting?");
+                                    Console.WriteLine("Your patience pays off as a large mooseboar lumbers out of the foliage near the game trail.");
+                                    Console.WriteLine("Such a mighty beast would feed you for an entire day! Though with its sharp tusks and giant antlers, this beast could easily maul you.");
+                                    Console.WriteLine("This will be a mighty battle!");
+                                    Console.WriteLine("Seeing an opportunity, you leap out and attack the mooseboar! The battle has begun!");
+                                    Console.WriteLine("Press ENTER to continue");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    forestmooseboarbattle();
+                                    break;
+
+                                }
+
+                        }
+
+                        break;
+                    }
+
+            }
+        }
+        public static void forestpathporknoteaten()
+        {
+            Console.WriteLine("You planned to go deeper into the forest. However, you soon feel that you're being watched! Using your keen survival skills, you set a trap, hiding behind a tree with your club raised.");
+            Console.WriteLine("After some time, a hooded figure appears along the path you took. With a roar, you bring down your club on the figure's head, killing them instantly.");
+            Console.WriteLine("You step out to loot the body, figuring it could have some food or riches. The moment you do, three figures appear from the foliage, armed with bows!");
+            Console.WriteLine("Realizing you've killed their comrade, you have no choice but to fight. Charging the bowmen, they cut you down with ease before you ever reach them, your body filled with arrows.");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            gameOvershameful();
+        }
+        public static void forestpathporkeaten()
+        {
+
+            Console.WriteLine("'What in the gods' name are you doing?' says a confused voice from behind the nearest tree.");
+            Console.WriteLine("Mouth still full of food, you raise your club in a clumsy manner, unsure if this voice is friend or foe.");
+            Console.WriteLine("Chuckles and laughter emanate from the nearby trees, and a hunting party appears around you. 'You're not what we expected to find,' says the closest hunter to you.");
+            Console.WriteLine("'The boys over there almost shot you, you know.' A large man traipsing through the forest from out of nowhere was quite a surprise.' ");
+            Console.WriteLine("You nod, still eating.");
+            Console.WriteLine("'We've been searching for a local beast, a Mooseboar. We heard it likes to eat meat with its usual grassy fare, and set this trap. Have you seen one?'");
+            Console.WriteLine("Mouth still full of food, you shake your head.");
+            Console.WriteLine("'Shame. Well, what brings a mighty warrior such as yourself out this far?'");
+            Console.WriteLine("Mouth finally free of food, you explain your quest to the huntsmen.");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            huntsMenhelpyou();
+           
+        }
+        public static void huntsMenhelpyou()
+        {
+            Console.WriteLine("You tell the story of the attack on your village, how you single-handedly slaughtered three dozen bandits, and how the feelble village shaman asked you for help.");
+            Console.WriteLine("The huntsmen have formed a circle around you, listening intently to your every word.");
+            Console.WriteLine("When you tale finally ends, they are left in awe of your strength.");
+            Console.WriteLine("'Mighty warrior, we would be happy to help you save your village. However, we must soon return to our own kingdom across the mountains.");
+            Console.WriteLine("However, I can personally lead you to this stronghold you speak of. We set up camp there not two nights ago!'");
+            Console.WriteLine("With your poor sense of direction, you happily agree to the escort to the stronghold. Looks like you're making better time than you ever imagined!");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            gotoAncientstronghold();
+
+
+        }
+        public static void forestrightpathtakencampencounter()
+        {
+
+        }
+        public static void forestmooseboarbattle()
+        {
+            string choicesix;
+
+            Console.WriteLine("Thanks to your patience, the Mooseboar is unable to make the first attack. Turning to face you, the hulking beast is caught completely by surprise!");
+            Console.WriteLine(" The first strike is yours. How will you proceed?");
+            Console.WriteLine("Attack 1: Swing your club at its nose.");
+            Console.WriteLine("Attack 2: Attempt to jump on its back.");
+            Console.WriteLine("Attack 3: Swing your club at the side of its head.");
+            Console.WriteLine("Attack 4: Throw your club on the ground and taunt the beast.");
+            Console.Write("Choice: ");
+            choicesix = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch (choicesix)
+            {
+                case "1":
+                case "attack 1":
+                case "Attack 1":
+                    {
+                        Console.WriteLine("With a mighty yell, you swing your wooden club downwards, directly at the beast's snout.");
+                        Console.WriteLine("However, the Mooseboar's antlers deflect the attack. Agitated, the beast immediately charges!");
+                        Console.WriteLine("Still off balance, you can do little as the giant beast grabs you with its mouth and slings you to the entrance of the cave.");
+                        Console.WriteLine("Dazed, you are barely on your feet before getting impaled by the beast's tusks and merciless antlers!");
+                        Console.WriteLine("You take some pleasure knowing that it will be days before the Mooseboar can remove your body from its face.");
+                        Console.WriteLine("Press ENTER to continue.");
+                        Console.ReadLine();
+                        gameOvershameful();
+                        break;
+                    }
+                case "2":
+                case "Attack 2":
+                case "attack 2":
+                    {
+                        string choiceseven;
+
+                        Console.WriteLine("Sensing the danger of the Mooseboar's tusks and antlers, you sidestep the turning beast and leap onto its back!");
+                        Console.WriteLine("Bellowing in panic, the beast tries to knock you off its broad back, but your hand grabs its fur tightly as you position yourself to attack.");
+                        Console.WriteLine("In the moment, you think of two attacks. Will you swing your club at the soft spot of its neck, or slam the club into its side?");
+                        Console.WriteLine("Attack Side, or Attack Neck?");
+                        Console.Write("Choice: ");
+                        choiceseven = Console.ReadLine().ToLower();
+                        Console.Clear();
+                        switch (choiceseven)
+                        {
+                            case "Attack Side":
+                            case "attack side":
+                            case "Attack side":
+                            case "attack Side":
+                            case "Side":
+                            case "side":
+                                {
+                                    string choiceeight;
+
+                                    Console.WriteLine("You swing your club with all your might, slamming it into the side of the Mooseboar. You hear ribs snap.");
+                                    Console.WriteLine("The beast squeals in pain, trying its best to throw you from its back. In its panic, it charges towards the cave!");
+                                    Console.WriteLine("Sensing the danger, you leap from the Mooseboar's back, rolling to the ground as it slams full force into the rocks.");
+                                    Console.WriteLine("There is a deep rumbling noise emanating from the cave as cracks form in the stones. The cavern collapses, burying the beast.");
+                                    Console.WriteLine("Only the Mooseboar's tusk is visible from the collapsed cave. Dissappointed in the lack of meal, you consider taking it for a trophy.");
+                                    Console.WriteLine("Will you take the large tusk? Yes or No?");
+                                    Console.Write("Choice: ");
+                                    choiceeight = Console.ReadLine().ToLower();
+                                    Console.Clear();
+                                    switch (choiceeight)
+                                    {
+                                        case "Yes":
+                                        case "yes":
+                                            {
+
+                                                Boolean hasMooseboarTusk = true;
+
+                                                if (hasMooseboarTusk)
+
+                                                    Console.WriteLine(" Wanting some sort of trophy for your wasted time, you pry a the tusk from the crushed Mooseboar. An easy task for someone with your strength.");
+                                                Console.WriteLine("Though dissappointed at the loss of all that protein, you tie the meter long tusk to the side of your belt and press onward, back into the forest");
+                                                Console.WriteLine("Not too long into your trek, you notice a small camp set in a small clearing between the trees! Cautiously, you approach.");
+                                                Console.WriteLine("Press ENTER to continue");
+                                                Console.ReadLine();
+                                                Console.Clear();
+                                                forestrightpathtakencampencounter();
+                                                break;
+                                            }
+
+                                        case "No":
+                                        case "no":
+                                            {
+
+                                                Boolean hasMooseboarTusk = false;
+                                                if (hasMooseboarTusk)
+
+
+                                                    Console.WriteLine("Choosing a more valorous approach than usual, you leave the beast in its rocky tomb. Grabbing your club, you prepare to move on.");
+                                                Console.WriteLine("Besides! There's more glory to be had in saving the village! Who know how they'll express their gratitude to the hero of Normia?");
+                                                Console.WriteLine("Caught up in your own fantasies as you stroll through the forest, you suddenly stumble into a clearing, where you find a recently used camp!");
+                                                Console.WriteLine("Pulling out your club, you prepare for whatever challenge you may face next.");
+                                                Console.WriteLine("Press ENTER to continue");
+                                                Console.ReadLine();
+                                                Console.Clear();
+                                                forestrightpathtakencampencounter();
+                                                break;
+                                            }
+
+                                    }      
+                                   break; 
+                                }
+
+                         
+                        }
+
+                        break;
+                    }
+                case "Attack 3":
+                case "attack 3":
+                case "3":
+                    {
+
+                        Console.WriteLine("Confident that wood is harder than the moist bones of a Mooseboar, you swing your club sideways towards the beast's head with all your might.");
+                        Console.WriteLine("Your attack works better than expected! As the creature turns, your strike hits between the antlers and the tusks, blinding it in one eye.");
+                        Console.WriteLine("Squealing in terror, the Mooseboar goes into a frenzy, knocking over nearby trees and upheaving large stones, which are sent flying through the air.");
+                        Console.WriteLine("Managing to dodge the boulders, you chase after your foe with a mighty battle shout, charging deeper into the forest!");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        boarLeadstopaladinquest();
+                        break;
+                    }
+                case "Attack 4":
+                case "attack 4":
+                case "4":
+                    {
+                        Console.WriteLine("Let no one ever say that you weren't overconfident. Throwing your club to the ground, you puff our your chest and yell profanely at the Mooseboar.");
+                        Console.WriteLine("'Your mother was a guinea pig! Your father was a whitetail deer!' you exclaim.");
+                        Console.WriteLine("Sensitive about its ancestral lineage, the Mooseboar becomes unnaturally aggressive and, with tears in its eyes, charges you at full speed!");
+                        Console.WriteLine("You realize the mistake you've made far too late, as you're gored to death before you even have a chance to apologize.");
+                        Console.WriteLine("Press ENTER to continue.");
+                        Console.ReadLine();
+                        gameOvermooseboarfunny();
+                        break;
+
+
+                    }
+
+                  
+            }   
+        }
+        public static void paladinOfthecreekfirstencounter()
+        {
+
+        }
+        public static void gameOvermooseboarfunny()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.Clear();
+
+            Console.Clear();
+            Console.WriteLine(" After killing you, the Mooseboar decides to call his Dad.It's been awhile.");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  ");
+            Console.WriteLine(" ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒");
+            Console.WriteLine("▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒");
+            Console.WriteLine("░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  ");
+            Console.WriteLine("░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒");
+            Console.WriteLine(" ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░");
+            Console.WriteLine("  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░");
+            Console.WriteLine("Press ENTER to try again");
+            Console.ReadLine();
+            Console.Clear();
+            gameTitle();
+        }
+        public static void boarLeadstopaladinquest()
+        {
+
+        }
+        public static void strongholdPartone()
+        {
+
+        }
+        public static void thirteenth()
+        {
+
+        }
+        public static void gotoAncientstronghold()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Clear();
+
+            Console.WriteLine("                                                                                            ");
+            Console.WriteLine("                                                                                            ");
+            Console.WriteLine("                                What will you find in the"                                    );
+            Console.WriteLine("                                                                                            ");
+            Console.WriteLine("     ▄▄▄█████▓ ██░ ██ ▓█████     ▄▄▄       ███▄    █  ▄████▄   ██▓▓█████  ███▄    █ ▄▄▄█████▓");
+            Console.WriteLine("     ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀    ▒████▄     ██ ▀█   █ ▒██▀ ▀█  ▓██▒▓█   ▀  ██ ▀█   █ ▓  ██▒ ▓▒");
+            Console.WriteLine("     ▒ ▓██░ ▒░▒██▀▀██░▒███      ▒██  ▀█▄  ▓██  ▀█ ██▒▒▓█    ▄ ▒██▒▒███   ▓██  ▀█ ██▒▒ ▓██░ ▒░");
+            Console.WriteLine("     ░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄    ░██▄▄▄▄██ ▓██▒  ▐▌██▒▒▓▓▄ ▄██▒░██░▒▓█  ▄ ▓██▒  ▐▌██▒░ ▓██▓ ░ ");
+            Console.WriteLine("       ▒██▒ ░ ░▓█▒░██▓░▒████▒    ▓█   ▓██▒▒██░   ▓██░▒ ▓███▀ ░░██░░▒████▒▒██░   ▓██░  ▒██▒ ░ ");
+            Console.WriteLine("       ▒ ░░    ▒ ░░▒░▒░░ ▒░ ░    ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░ ░▒ ▒  ░░▓  ░░ ▒░ ░░ ▒░   ▒ ▒   ▒ ░░   ");
+            Console.WriteLine("         ░     ▒ ░▒░ ░ ░ ░  ░     ▒   ▒▒ ░░ ░░   ░ ▒░  ░  ▒    ▒ ░ ░ ░  ░░ ░░   ░ ▒░    ░    ");
+            Console.WriteLine("      ░                                                    ░                                       ");
+            Console.WriteLine("       ██████ ▄▄▄█████▓ ██▀███   ▒█████   ███▄    █   ▄████  ██░ ██  ▒█████   ██▓    ▓█████▄ ");
+            Console.WriteLine("     ▒██    ▒ ▓  ██▒ ▓▒▓██ ▒ ██▒▒██▒  ██▒ ██ ▀█   █  ██▒ ▀█▒▓██░ ██▒▒██▒  ██▒▓██▒    ▒██▀ ██▌");
+            Console.WriteLine("     ░ ▓██▄   ▒ ▓██░ ▒░▓██ ░▄█ ▒▒██░  ██▒▓██  ▀█ ██▒▒██░▄▄▄░▒██▀▀██░▒██░  ██▒▒██░    ░██   █▌");
+            Console.WriteLine("       ▒   ██▒░ ▓██▓ ░ ▒██▀▀█▄  ▒██   ██░▓██▒  ▐▌██▒░▓█  ██▓░▓█ ░██ ▒██   ██░▒██░    ░▓█▄   ▌");
+            Console.WriteLine("     ▒██████▒▒  ▒██▒ ░ ░██▓ ▒██▒░ ████▓▒░▒██░   ▓██░░▒▓███▀▒░▓█▒░██▓░ ████▓▒░░██████▒░▒████▓ ");
+            Console.WriteLine("     ▒ ▒▓▒ ▒ ░  ▒ ░░   ░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░   ▒ ▒  ░▒   ▒  ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░▓  ░ ▒▒▓  ▒ ");
+            Console.WriteLine("     ░ ░▒  ░ ░    ░      ░▒ ░ ▒░  ░ ▒ ▒░ ░ ░░   ░ ▒░  ░   ░  ▒ ░▒░ ░  ░ ▒ ▒░ ░ ░ ▒  ░ ░ ▒  ▒ ");
+            Console.WriteLine("     ░  ░  ░    ░        ░░   ░ ░ ░ ░ ▒     ░   ░ ░ ░ ░   ░  ░  ░░ ░░ ░ ░ ▒    ░ ░    ░ ░  ░ ");
+            Console.WriteLine("                                 Press ENTER to continue"                                     );
+            Console.ReadLine();
+            Console.Clear();
+            strongholdPartone();
+        }
+        public static void gameOvershameful()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Clear();
+
+            Console.Clear();
+            Console.WriteLine(" Well...at least no one was around to see your shameful demise.");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  ");
+            Console.WriteLine(" ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒");
+            Console.WriteLine("▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒");
+            Console.WriteLine("░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  ");
+            Console.WriteLine("░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒");
+            Console.WriteLine(" ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░");
+            Console.WriteLine("  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░");
+            Console.WriteLine("Press ENTER to try again");
+            Console.ReadLine();
+            Console.Clear();
+            gameTitle();
+        }
+        public static void gameOvervillagebeginning()
+        {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Clear();
+
+            Console.Clear();
+            Console.WriteLine("Your actions, or incredible lack thereof, has led to your village being pillaged and burned by the bandits.");
+            Console.WriteLine("If only you'd fought like a barbarian!");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("                                                                         ");
+            Console.WriteLine("  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  ");
+            Console.WriteLine(" ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒");
+            Console.WriteLine("▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒");
+            Console.WriteLine("░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  ");
+            Console.WriteLine("░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒");
+            Console.WriteLine(" ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░");
+            Console.WriteLine("  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░");
+            Console.WriteLine("Press ENTER to restart");
+            Console.ReadLine();
+            Console.Clear();
+            gameTitle();
+
+
+
+
+
+        }
+    }
+}
+
+

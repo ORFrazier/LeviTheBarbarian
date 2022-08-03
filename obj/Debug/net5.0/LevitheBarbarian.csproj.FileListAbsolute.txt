@@ -1,0 +1,16 @@
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\bin\Debug\net5.0\LevitheBarbarian.exe
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\bin\Debug\net5.0\LevitheBarbarian.deps.json
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\bin\Debug\net5.0\LevitheBarbarian.runtimeconfig.json
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\bin\Debug\net5.0\LevitheBarbarian.runtimeconfig.dev.json
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\bin\Debug\net5.0\LevitheBarbarian.dll
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\bin\Debug\net5.0\LevitheBarbarian.pdb
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.csproj.AssemblyReference.cache
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.AssemblyInfoInputs.cache
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.AssemblyInfo.cs
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.csproj.CoreCompileInputs.cache
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.dll
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\refint\LevitheBarbarian.dll
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.pdb
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\LevitheBarbarian.genruntimeconfig.cache
+C:\Users\lonni\source\repos\LevitheBarbarian\LevitheBarbarian\obj\Debug\net5.0\ref\LevitheBarbarian.dll
