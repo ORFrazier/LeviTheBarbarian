@@ -42,6 +42,8 @@ namespace LevitheBarbarian
         }
         public static void first()
         {
+            string gameOverText = " How unfortunate. You've already failed before leaving the village!";
+
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
@@ -70,7 +72,7 @@ namespace LevitheBarbarian
                         Console.WriteLine("Unaware of the fires comsuming your village, you become part of the kindling. Your legend ends here.");
                         Console.WriteLine("Press ENTER to continue.");
                         Console.ReadLine();
-                        gameOverfirstchoice();
+                        gameOver(gameOverText);
                         break;
                     }
                 case "2":
@@ -84,7 +86,7 @@ namespace LevitheBarbarian
                         Console.WriteLine("However, your clumsiness has sent your favorite axe right through your face. You die immediately, and the village burns.");
                         Console.WriteLine("Press ENTER to continue.");
                         Console.ReadLine();
-                        gameOverfirstchoice();
+                        gameOver(gameOverText);
                         break;
                     }
                 case "3":
@@ -144,7 +146,7 @@ namespace LevitheBarbarian
                 Console.WriteLine("Press ENTER to continue.");
                 Console.ReadLine();
                 Console.Clear();
-                gameOvervillagebeginning();
+                gameOver("Your actions, or incredible lack thereof, has led to your village being pillaged and burned by the bandits.");
 
 
 
@@ -188,7 +190,7 @@ namespace LevitheBarbarian
                 Console.WriteLine("Press ENTER to continue");
                 Console.ReadLine();
                 Console.Clear();
-                gameOverfirstchoice();
+                gameOver(" How unfortunate. You've already failed before leaving the village!");
 
             }
             else
@@ -235,7 +237,7 @@ namespace LevitheBarbarian
                             Console.WriteLine("Press ENTER to continue");
                             Console.ReadLine();
                             Console.Clear();
-                            gameOvershameful();
+                            gameOver(" Well...at least no one was around to see your shameful demise.");
                             break;
                         }
                 }
@@ -243,28 +245,7 @@ namespace LevitheBarbarian
 
             }
         }
-        public static void gameOverfirstchoice()
-        {
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.Clear();
 
-            Console.Clear();
-            Console.WriteLine(" How unfortunate. You've already failed before leaving the village!");
-            Console.WriteLine("                                                                         ");
-            Console.WriteLine("                                                                         ");
-            Console.WriteLine("  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  ");
-            Console.WriteLine(" ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒");
-            Console.WriteLine("▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒");
-            Console.WriteLine("░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  ");
-            Console.WriteLine("░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒");
-            Console.WriteLine(" ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░");
-            Console.WriteLine("  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░");
-            Console.WriteLine("Press ENTER to try again");
-            Console.ReadLine();
-            Console.Clear();
-            gameTitle();
-        }
         public static void youWin()
         {
 
@@ -437,7 +418,7 @@ namespace LevitheBarbarian
                                     Console.WriteLine("Press ENTER to continue");
                                     Console.ReadLine();
                                     Console.Clear();
-                                    gameOvershameful();
+                                    gameOver(" Well...at least no one was around to see your shameful demise.");
                                     break;
                                 }
                             case "Wait":
@@ -472,7 +453,7 @@ namespace LevitheBarbarian
             Console.WriteLine("Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
-            gameOvershameful();
+            gameOver(" Well...at least no one was around to see your shameful demise.");
         }
         public static void forestpathporkeaten()
         {
@@ -537,7 +518,7 @@ namespace LevitheBarbarian
                         Console.WriteLine("You take some pleasure knowing that it will be days before the Mooseboar can remove your body from its face.");
                         Console.WriteLine("Press ENTER to continue.");
                         Console.ReadLine();
-                        gameOvershameful();
+                        gameOver(" Well...at least no one was around to see your shameful demise.");
                         break;
                     }
                 case "2":
@@ -724,36 +705,16 @@ namespace LevitheBarbarian
             Console.Clear();
             strongholdPartone();
         }
-        public static void gameOvershameful()
+       
+        
+        public static void gameOver(string deathText)
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.Clear();
 
             Console.Clear();
-            Console.WriteLine(" Well...at least no one was around to see your shameful demise.");
-            Console.WriteLine("                                                                         ");
-            Console.WriteLine("                                                                         ");
-            Console.WriteLine("  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  ");
-            Console.WriteLine(" ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒");
-            Console.WriteLine("▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒");
-            Console.WriteLine("░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  ");
-            Console.WriteLine("░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒");
-            Console.WriteLine(" ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░");
-            Console.WriteLine("  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░");
-            Console.WriteLine("Press ENTER to try again");
-            Console.ReadLine();
-            Console.Clear();
-            gameTitle();
-        }
-        public static void gameOvervillagebeginning()
-        {
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.Clear();
-
-            Console.Clear();
-            Console.WriteLine("Your actions, or incredible lack thereof, has led to your village being pillaged and burned by the bandits.");
+            Console.WriteLine(deathText);
             Console.WriteLine("If only you'd fought like a barbarian!");
             Console.WriteLine("                                                                         ");
             Console.WriteLine("                                                                         ");
