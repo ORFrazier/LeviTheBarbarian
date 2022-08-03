@@ -165,7 +165,7 @@ namespace LevitheBarbarian
             Console.WriteLine("With a mighty yell, you charge your foes, who don't see you coming.");
             Console.WriteLine("Axe raised, you slaughter the bandits who stand before you, easily overcoming their weak combat skills.");
             Console.WriteLine("However, during the slaughter, your weapon is damaged!");
-            Console.WriteLine("Though it be the middle of the night, you appraoch the vilalge blacksmith, who is tossing the still warm bodies of bandits into a wagon.");
+            Console.WriteLine("Though it be the middle of the night, you appraoch the village blacksmith, who is tossing the still warm bodies of bandits into a wagon.");
             Console.WriteLine("Seeing you approach, he nods in your direction, taking a swig of foul smelling ale");
             Console.WriteLine("'We're lucky to have you here, Levi' he states. 'There's no way I could've handled that many alone.");
             Console.WriteLine("Before you get a chance to speak, he moves his torch closer, eyeing your splintered weapon");
