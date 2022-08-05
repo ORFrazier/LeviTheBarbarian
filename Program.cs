@@ -365,13 +365,13 @@ namespace LevitheBarbarian
                     {
                         Console.WriteLine("Following a stream seems like the best choice. Carefully working your way down the rocky slope, you begin following the gentle stream deeper into the forest.");
                         Console.WriteLine("However, it soon becomes apparent that you're not alone.");
-                        Console.WriteLine("Not so far off in the distance, you hear the sounds of clanking metal against stone.");
-                        Console.WriteLine("Someone in armor seems to be following you!");
+                        Console.WriteLine("Not so far off in the distance, you hear the sounds of clanking metal against stone, swiftly heading in your direction!");
+                        Console.WriteLine("Someone seems to be following you.");
                         Console.WriteLine("With plenty of time to prepare, you begin to set a trap.");
                         Console.WriteLine("Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
-                        forestpathporkeaten();
+                        paladinOfthecreekfirstencounter();
                         break;
                     }
                 case "3":
@@ -582,7 +582,7 @@ namespace LevitheBarbarian
                                                 if (hasMooseboarTusk)
 
 
-                                                    Console.WriteLine("Choosing a more valorous approach than usual, you leave the beast in its rocky tomb. Grabbing your club, you prepare to move on.");
+                                                Console.WriteLine("Choosing a more valorous approach than usual, you leave the beast in its rocky tomb. Grabbing your club, you prepare to move on.");
                                                 Console.WriteLine("Besides! There's more glory to be had in saving the village! Who know how they'll express their gratitude to the hero of Normia?");
                                                 Console.WriteLine("Caught up in your own fantasies as you stroll through the forest, you suddenly stumble into a clearing, where you find a recently used camp!");
                                                 Console.WriteLine("Pulling out your club, you prepare for whatever challenge you may face next.");
@@ -638,6 +638,78 @@ namespace LevitheBarbarian
         }
         public static void paladinOfthecreekfirstencounter()
         {
+            string choicenine;
+
+            Console.WriteLine("You've decided to set a trap for whoever is clanking towards you. Finding a large boulder near the creek, you expertly hide your large frame, club raised.");
+            Console.WriteLine("Soon, the loud footsteps approach, and out from the corner appears an exhausted man covered in shining armor! He's breathing heavily, and appears not to notice you.");
+            Console.WriteLine("Will you attack the man? Or confront him?");
+            Console.Write("Choice: ");
+            choicenine = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch (choicenine)
+            { 
+                case "Attack":
+                case "attack":
+                    {
+                        string choiceten;
+
+                        Console.WriteLine("Choosing violence is the barbarian way. With a yell, you swing your club at his helmet. Caught completely unaware, the man falls face first into the creek, likely dead.");
+                        Console.WriteLine("Ha! What a fool. Thinking that all his armor would save him from your mighty strength!");
+                        Console.WriteLine("Standing over his corpse, you consider looting the body. Who knows what treasures a man in knightly armor could have!");
+                        Console.WriteLine("Will you choose to loot him, or leave? You are on a quest, after all.");
+                        Console.Write("Loot? or Leave?: ");
+                        choiceten = Console.ReadLine().ToLower();
+                        Console.Clear();
+                        switch (choiceten)
+                        {
+                            case "loot":
+                            case "Loot":
+                                {
+                                    Console.WriteLine("Greed gets the better of you. Turning the body over, you begin searching for anything of value.");
+                                    Console.WriteLine("However, while cursing loudly, trying to take off the man's chestplate, you don't hear the approaching, cumbling footsteps of a towering Rock Golem!");
+                                    Console.WriteLine("Caught completely unaware, it bashes you across the back of your head. Dying instantly,your body falls on top of your victim.");
+                                    Console.WriteLine("Press ENTER to continue");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    gameOver("Greed is good, but death is always bad!");
+                                    break;
+                                }
+                            case "Leave":
+                            case "leave":
+                                {
+                                    Console.WriteLine("The urge to loot the dead knight is strong, but your suspicious gets the better of you. What was a fully armored man doing in a creek?");
+                                    Console.WriteLine("You decide to leave the body alone. He didn't appear to have a visible sack of loot anyways.");
+                                    Console.WriteLine("Unsure of why the man was running around in a creek, or if he was even after you, you decide to leave the rocky creek and return to the forest.");
+                                    Console.WriteLine("After pushing through the dense trees aimlessly for some time, you come across a camp in a clearing! Cautiously, you approach.");
+                                    Console.WriteLine("Press ENTER to continue");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    forestrightpathtakencampencounter();
+                                    break;
+
+                                }
+                                
+                        }
+                     break;
+                    }
+                case "confront":
+                case "Confront":
+                    {
+                        Console.WriteLine("As the armored figure approaches, you consider just why there's an armored man chasing you. Could the smelly shaman have sold you out?");
+                        Console.WriteLine("You want answers!");
+                        Console.WriteLine("To hell with this hiding business. A barbarian faces their problems head on! Leaping around the corner, you confront the armored man head on!");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        confrontingThepaladin();
+                        break;
+
+                    }
+
+
+
+             
+            }
 
         }
         public static void gameOvermooseboarfunny()
@@ -670,7 +742,7 @@ namespace LevitheBarbarian
         {
 
         }
-        public static void thirteenth()
+        public static void confrontingThepaladin()
         {
 
         }
@@ -715,7 +787,7 @@ namespace LevitheBarbarian
 
             Console.Clear();
             Console.WriteLine(deathText);
-            Console.WriteLine("If only you'd fought like a barbarian!");
+          
             Console.WriteLine("                                                                         ");
             Console.WriteLine("                                                                         ");
             Console.WriteLine("  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  ");
