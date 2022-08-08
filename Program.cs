@@ -736,14 +736,155 @@ namespace LevitheBarbarian
         }
         public static void boarLeadstopaladinquest()
         {
-
+            Console.WriteLine("Soon, the Mooseboar gains quite a distance on you. Who knew that a four-legged animal could move so fast!");
+            Console.WriteLine("Making a mental note to smash legs and not eyes next time, you continue your pursuit, but it's apparent your quarry is getting away.");
+            Console.WriteLine("The beast has managed the impossible and escaped you. Now you find yourself at the bank of a wide, rocky creek between the tall trees.");
+            Console.WriteLine("You soon realize you're not alone! There's an armored man staring at you. Why is a knight in the middle of a creek in the woods?");
+            Console.WriteLine("A cunning barbarian such as yourself will find the answer. What were you doing before?");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            confrontingThepaladin();
         }
         public static void strongholdPartone()
         {
 
         }
+        public static void paladinExposition()
+        {
+            Console.WriteLine("You decided to listen to the Guffin's words. You may grow to regret this.");
+            Console.WriteLine("'As I mentioned, I am the great Ser Guffin, great paladin of The Holy Exposition, the glorious order of the realm. THIS realm, in fact.");
+            Console.WriteLine("I bet you're wondering what someone as well-equipped as I am doing out here? Well, let me spin you a great yarn.");
+            Console.WriteLine("A grand tale of adventure, betrayal, love, tragedy, comedey, and intrigue!'");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            expositionOne();
+
+        }
+        public static void expositionOne()
+        {
+            Console.WriteLine("'Precisely one month and two days ago, I awoke in a panic. My superior, Ser Exposi had barged into my chambers!");
+            Console.WriteLine("'He began recanting a lovely tale about his wife and fourteen children, and after two hours, he told me just why he decided to visit.");
+            Console.WriteLine("The King himself had given him a most sensitive quest, and time was of the essence! We had to act fast, else the King's bastard child would be in danger!");
+            Console.WriteLine("I know what you're thinking. Our great King has a bastard child? Well, it's actually a great story. Allow me to fill you in.'");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            expositionTwo();
+
+
+
+        }
+        public static void expositionTwo()
+        {
+            Console.WriteLine("'The King was not always the infallible being you know in the present. Eleven years ago, he was quite the wild one, spreading his...influence in many places.");
+            Console.WriteLine("In this case, his influence was most appreciated. In a village not too far from here, one of his mistresses went and had a child!");
+            Console.WriteLine("And that child was the King's first bastard. First, I hear you say? Well, there's actually four more. Allow me to elaborate.");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            expositionThree();
+
+
+
+
+
+        }
+        public static void expositionThree()
+        {
+            Console.WriteLine("'As I mentioned, there are four more bastard offspring of the King. Yes, there are five in total. As a paladin of The Holy Exposition, it's my duty to keep them all in check.");
+            Console.WriteLine("The first of the other four was a girl, and members of my order were tasked with keeping her from becoming a witch. An easy task, surely. However!");
+            Console.WriteLine("It was one which become monumentally more challenging once you consider the lineage of her mother, a witch from the bogwoods! Now, I bet you're wondering,");
+            Console.WriteLine("why did our King find the time to spread his seed that far out of the way of the kingdom? And why a witch? Well, let me tell you a story.");
+            Console.WriteLine("Press ENTER to continue...");
+            Console.ReadLine();
+            Console.Clear();
+            expositionFour();
+
+
+
+
+        }
+        public static void expositionFour()
+        {
+            Console.WriteLine("'It all began when our King was still a prince, under the heel of his cruel father.'");
+            Console.WriteLine("For a blessed moment, the paladin finally stops talking. You begin to say somehting but are promptly cut off.");
+            Console.WriteLine("'A tragedy of love never realized! At least, not spiritually. Our King, the Prince at the time, grew fond of the witch, and vowed to return someday!");
+            Console.WriteLine("And though his father kept them apart until his death, the two eventually rejoined, rejoiced in each other's company for at least one night, and boom!");
+            Console.WriteLine("A daughter was born. Now, the King has been quite clear with his wishes, and demands we keep her away from the dark arts of her mother. However!");
+            Console.WriteLine("Her story has nothing to do with why I ended up in this creek, talking to you, my fine shirtless friend. For that tale starts somewhere else!");
+            Console.WriteLine("Allow me to explain.'");
+            Console.WriteLine("Better press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            expositionFive();
+
+
+        }
+        public static void expositionFive()
+        {
+
+            Console.WriteLine("Your brain feels fuzzy. The paladin continues to talk at you.");
+            Console.WriteLine("'Friend! As I was saying before, if you remember from before the tale of the King's witch mistress, I was awoken by the great Ser Esposi.");
+            Console.WriteLine("And he had a mission for me, as no other paladin could be tasked with such a harrowing mission. His first bastard had been kidnapped by a merciless mage!");
+            Console.WriteLine("This fiend was once a mighty spellcaster who served the King, but after a lengthy plot to assassinate him failed, he fled deep into these woods,");
+            Console.WriteLine("possibly taking the bastard child hostage! Now, I know what you're thinking. Possibly? Well you see, there's a good reason we beleive the fiendish");
+            Console.WriteLine("fire thrower has taken the boy. It all began when...'");
+            Console.WriteLine("Press ENTER to...hey, what's that?");
+            Console.ReadLine();
+            Console.Clear();
+            expositionEnds();
+
+
+
+
+
+        }
+        public static void expositionEnds()
+        {
+            Console.WriteLine("The paladin's many words are like a curse on your mind. His stories bleeding into each other and meaning nothing to you.");
+            Console.WriteLine("However, staring blankly behind the paladin has paid off, as you see a massive, monstrous creature approaching!");
+            Console.WriteLine("'Quiet, Paladin!' you yell, waving your club towards the approaching monster. 'There's a golem coming!'");
+            Console.WriteLine("The paladin turns and sees the approaching foe. Finally shutting up, he draws the sword from his side.");
+            Console.WriteLine("'the mage has sent a golem to kill us!' he yells. 'Prepare youself, friend!'");
+            Console.WriteLine("Finally, something is happening! You prepare for the battle!");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            golemCreekbattle();
+
+        }
+        public static void golemCreekbattle()
+        {
+
+        }
+        public static void notusedyet()
+        {
+
+        }
+        public static void notusedyetone()
+        {
+
+        }
+        public static void notusedyetbutwillbe()
+        {
+
+        }
+
+        public static void blurg()
+        {
+
+        }
         public static void confrontingThepaladin()
         {
+            Console.WriteLine("'Who are you!?' you demand loudly. Aggressively, you raise your club in a battle stance.");
+            Console.WriteLine("The armored man bows to you, making you uneasy. 'I am Ser Guffin, paladin of this realm. Please, lower your weapon. I need your help!'");
+            Console.WriteLine("Help this man? You begin to wonder what could be in it for you. ");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            paladinExposition();
 
         }
         public static void gotoAncientstronghold()
