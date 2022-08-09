@@ -857,10 +857,68 @@ namespace LevitheBarbarian
         }
         public static void golemCreekbattle()
         {
+            string choiceeleven;
+
+            Console.WriteLine("A monstrous golem, appearing to be made of the very rock and smooth stones of the creek, towers above you and the paladin. Its body is double your height.");
+            Console.WriteLine("Dripping wet, it would be difficult to scale the construct by normal means and attack its small head.");
+            Console.WriteLine("You cannot predict how the paladin will act. How will you proceed?");
+            Console.WriteLine("1: Charge ahead of the paladin and swing your club at the golem's legs.");
+            Console.WriteLine("2: Wait for the paladin to make the first move.");
+            Console.WriteLine("3: Flee. There's no glory in fighting rocks!");
+            Console.Write("Choice: ");
+            choiceeleven = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch (choiceeleven)
+            {
+                case "1":
+                case "Charge":
+                case "Charge ahead":
+                case "charge":
+                case "charge ahead":
+                    {
+
+                        Console.WriteLine("Shoving the paladin out of your way, you charge forward towards the large golem.");
+                        Console.WriteLine("Confidently, you swing your club at full force towards the golem's right leg. Pebbles go flying!");
+                        Console.WriteLine("You knew it! Wood beats rock! For a breif moment, you're filled with confidence!");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        golemFightchoiceone();
+
+                        break;
+                    }
+                case "2":
+                case "wait":
+                case "Wait":
+                case "wait for paladin":
+                    {
+                        Console.WriteLine("Unsure of how to smash a creature made of stones, you wait for the paladin to make the first move.");
+                        Console.WriteLine("");
+
+                        break;
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
 
         }
-        public static void notusedyet()
+        public static void golemFightchoiceone()
         {
+
+
+
 
         }
         public static void notusedyetone()
