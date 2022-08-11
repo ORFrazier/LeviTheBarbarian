@@ -893,7 +893,12 @@ namespace LevitheBarbarian
                 case "wait for paladin":
                     {
                         Console.WriteLine("Unsure of how to smash a creature made of stones, you wait for the paladin to make the first move.");
-                        Console.WriteLine("");
+                        Console.WriteLine("The paladin, gaze fixed on the towering construct, speaks to you. 'Aim for its head. We'll have to topple it!");
+                        Console.WriteLine("Break its rocky legs. Smash its head. Easy enough, right?");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        golemFightchoiceTwo();
 
                         break;
 
@@ -916,12 +921,101 @@ namespace LevitheBarbarian
         }
         public static void golemFightchoiceone()
         {
+            Console.WriteLine("Your tenacious strike has unfortunately did the damage you first thought it would.");
+            Console.WriteLine("The emotionless golem looks down at you, grabbing your club and crushing it, leaving you weaponless!");
+            Console.WriteLine("It punches you so hard that it knocks the breath out of you, sending you flying out of the creek and crashing into a nearby tree.");
+            Console.WriteLine("However, before it can pursue you and finish you off, the paladin intercepts it, gaining its attention with his own attack!");
+            Console.WriteLine("'Your fight is with me, golem!' he yells.");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            golemFightchoiceonetwo();
+
+
+
+        }
+        public static void golemFightchoiceonetwo()
+        {
+            string choicetwelve;
+
+            Console.WriteLine("As you regain your footing, you notice how the paladin fights the golem, dodging its powerful stone punches and chipping away at its frame with his sword.");
+            Console.WriteLine("If only you had a giant hammer to smash this foe! This gives you an idea. Looking back at the leaning tree behind you, your barbarian brain goes into overtime.");
+            Console.WriteLine("Will you:");
+            Console.WriteLine("1: Rip off a large branch and rejoin the fight");
+            Console.WriteLine("2: Get behind the tree and push the entire thing down");
+            Console.Write("Choice: ");
+            choicetwelve = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch (choicetwelve)
+            {
+
+                case "1":
+                    {
+                        Console.WriteLine(" Reaching up into the leaning tree, you use your barbarian strength to rip out a thick, sturdy branch. It's like a giant club!");
+                        Console.WriteLine("Charging back into battle with your two-handed weapon, you yell 'Duck!' to the paladin as you prepare to swing the large branch.");
+                        Console.WriteLine("However, the paladin doesn't hear you, focusing too much on the monstrous golem swinging devastating punches his way.");
+                        Console.WriteLine("Unable to halt your massive swing, you hit the paladin across the head, taking most of the impact of your attack.");
+                        Console.WriteLine("The paladin slams into the golem, and bounces off its leg. The golem now focuses on you.");
+                        Console.WriteLine("Mistakes have been made.");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        golemFightchoiceonefail();
+
+                        break;
+
+
+                    }
+               case "2":
+                    {
+                        Console.WriteLine("Why take a branch to smash when you can use the entire tree? It only makes sense.");
+                        Console.WriteLine("Taking a few steps behind the tree, you run full force into its trunk, shaking the entire trunk and snapping some roots.");
+                        Console.WriteLine("Keep at it! A few more tackles and it will fall! You yell at the paladin, who's noticed the cracking and shaking tree already.");
+                        Console.WriteLine("'Move it to position!' you shout. Nodding, the paladin refocuses on the golem swinging heavy punches at him, moving it slowly into position.");
+                        Console.WriteLine("You run full force into the tree again. One more time and it will fall!");
+                        Console.WriteLine("Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        golemFightchoiceonewin();
+
+                        break;
+
+                    }
+
+
+
+            }
+
+
 
 
 
 
         }
-        public static void notusedyetone()
+        public static void golemFightchoiceonefail()
+        {
+            Console.WriteLine("Without the paladin to help you, the golem's focus is entirely on you. Emotionless, it moves forward, intent on crushing you.");
+            Console.WriteLine("With a furious roar, you launch yourself at the stone golem, swinging the large branch at its small head. Unfortunately, the branch is intercepted by its massive hands.");
+            Console.WriteLine("With ease, it crushes your new club, and immedately throws a punch at you once again. You try to block, but your bones are shattered.");
+            Console.WriteLine("You learn the hard way that wood and flesh are not as hard as stone. Pummeled into a fleshy pile, your story ends here.");
+            Console.WriteLine("Press ENTER to continue.");
+            Console.ReadLine();
+            gameOver(" Maybe you should have went with a bigger club.");
+            
+        }
+        public static void golemFightchoiceonewin()
+        {
+            Console.WriteLine("You can see that the paladin has moved the mindless golem into position. Now's your chance!");
+            Console.WriteLine("Ignoring your bruises and pain, you charge full force once more into the tree. The last of its large roots snap. It's coming down! ");
+            Console.WriteLine("Seeing this, the paladin rolls out of the way, just as the mighty trunk comes crashing down directly on top of the golem, knocking it to the ground!");
+            Console.WriteLine("Quickly, the paladin takes up his sword, rushes over to the struggling golem, and drives his blade through its glowing eye. Shuddering, the golem crumbles.");
+            Console.WriteLine("It becomes nothing but a pile of inert rocks and pebbles. You've won!");
+        }
+        public static void golemFightchoiceTwo()
+        {
+
+        }
+        public static void notusedyettwo()
         {
 
         }
