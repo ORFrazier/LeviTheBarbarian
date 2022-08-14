@@ -1007,15 +1007,80 @@ namespace LevitheBarbarian
         {
             Console.WriteLine("You can see that the paladin has moved the mindless golem into position. Now's your chance!");
             Console.WriteLine("Ignoring your bruises and pain, you charge full force once more into the tree. The last of its large roots snap. It's coming down! ");
-            Console.WriteLine("Seeing this, the paladin rolls out of the way, just as the mighty trunk comes crashing down directly on top of the golem, knocking it to the ground!");
-            Console.WriteLine("Quickly, the paladin takes up his sword, rushes over to the struggling golem, and drives his blade through its glowing eye. Shuddering, the golem crumbles.");
+            Console.WriteLine("Seeing this, the paladin rolls out of the way, just as the mighty trunk lands directly on top of the golem, knocking it to the ground!");
+            Console.WriteLine("Quickly, the paladin takes up his sword, rushes over to the struggling golem, and drives his blade through one of its glowing eyes. Shuddering, the golem crumbles.");
             Console.WriteLine("It becomes nothing but a pile of inert rocks and pebbles. You've won!");
         }
         public static void golemFightchoiceTwo()
         {
+            Console.WriteLine("The golem makes the first move, slamming its giant stone fist downwards towards you. Prepared, you dodge the attack just in time.");
+            Console.WriteLine("The paladin makes his move. Taking up his sword, he slashes the golems upper leg, sending pebbles flying.");
+            Console.WriteLine("You also go on the attack. While the golem is raising its stone fists, you swing your wood club at its arm, testing your foe's durability.");
+            Console.WriteLine("Some pebbles fly, but not many. Your club is dented.");
+            Console.WriteLine("You wonder just how you're going to smash this foe.");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            golemFightchoiceTwocontinued();
+        }
+        public static void golemFightchoiceTwocontinued()
+        {
+            Console.WriteLine("The paladin barely dodges the golem's slow, powerful fist, bringing down his blade into the construct's arm. It goes clean through the joint!");
+            Console.WriteLine("If the golem can feel pain, it's impossible to tell. However, the paladin sure does.");
+            Console.WriteLine("Grabbing the knight by his leg, the golem slams him to the ground before tossing him against a nearby leaning tree.");
+            Console.WriteLine("Groaning as he struggles to find his footing, it's amazing he's alive at all. Now it's just you and your foe. No one to get in the way!");
+            Console.WriteLine("The Golem slowly turns to you. You remind yourself that you wanted this fight.");
+            Console.WriteLine("Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            golemFightchoiceTwoBigMoment();
 
         }
-        public static void notusedyettwo()
+        public static void golemFightchoiceTwoBigMoment()
+        {
+            string choicethirteen;
+
+            Console.WriteLine("The golem's attacks are slow, but punishing. One wrong move will cost you your life. You notice the sword still hanging in its upper arm.");
+            Console.WriteLine("The paladin is shouting something near the leaning tree on the bank above, but you cannot make it out.");
+            Console.WriteLine("What will you do?");
+            Console.WriteLine("1: Run closer to the paladin, bringing the fight towards him.");
+            Console.WriteLine("2: Wait for the golem to attack, then use the sword in its arm to your advantage.");
+            Console.WriteLine("3: Wait for the golem to attack, then strike at its legs with your club. That was the plan, right?");
+            Console.Write("Choice: ");
+            choicethirteen = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch (choicethirteen)
+            {
+
+                case "1":
+                case "Run closer":
+                case "run closer":
+                    {
+                        Console.WriteLine("What is that damned paladin yelling about? He already got beaten! Deciding that it must be something useful, you move towards him.");
+                        Console.WriteLine("The large golem is in pursuit, determined to destroy the both of you.");
+                        Console.WriteLine();
+
+                        break;
+                    }
+
+
+
+
+
+
+
+                   
+            }
+                
+
+
+
+
+
+
+
+        }
+        public static void notusedyetfour()
         {
 
         }
