@@ -73,6 +73,7 @@ namespace LevitheBarbarian
                 case "Back to bed":
                     {
                         Console.WriteLine("Ignoring the calls of the panicked villagers, you roll back into the prickly warmth of your straw bed.\n Unfortunately, in your deep, deserved slumber, you meet an undeserved fate.\n Unaware of the fires comsuming your village, you become part of the kindling. Your legend ends here.\n Press ENTER to continue.");
+                        Console.ReadLine();
                         gameOver(gameOverText);
                         break;
                     }
@@ -402,6 +403,19 @@ namespace LevitheBarbarian
         {
             //This one will be used for most endings leading to stage 3
 
+            Console.WriteLine("You've come across a camp of three tents in an opening deep within the forest./n The campfire at the center of these three tents is still smoldering, but there appears to be no one here. Quietly, you approach to get a closer look, and to check for any spare loot left behind.");
+            Console.ReadLine();
+            Console.Clear();
+            forestrightpathtakencampencounterTwo();
+        }
+        public static void forestrightpathtakencampencounterTwo()
+        {
+            //Leading to the Stronghold!
+
+            Console.WriteLine("Unfortunately, whoever was here made sure to leave nothing of value behind. However, a trail leads away from the camp and towards something massive just beyone the trees.\n Weapon in hand, you follow the trail, which leads to a clearing, revealing a massive structure!\n An imposingly tall stronghold stands before you, its drawbridge already lowered and massive gate opened. You won't be alone, it seems.\n Gathering your courage, you charge into the unknown, prepared to face your final challenges.");
+            Console.ReadLine();
+            Console.Clear();
+            gotoAncientstronghold();
         }
         public static void forestmooseboarbattle()
         {
@@ -610,10 +624,6 @@ namespace LevitheBarbarian
             Console.Clear();
             confrontingThepaladin();
         }
-        public static void strongholdPartone()
-        {
-
-        }
         public static void paladinExposition()
         {
             //it begins...you may regret this.
@@ -811,8 +821,19 @@ namespace LevitheBarbarian
         }
         public static void golemFightchoiceonewin()
         {
-            //victory over the golem!Make sure to COME BACK AND FINISH THIS BLOCK. It doesn't lead anywhere yet
+            //victory over the golem, but you don't get the sword!
             Console.WriteLine("You can see that the paladin has moved the mindless golem into position. Now's your chance!\n Ignoring your bruises and pain, you charge full force once more into the tree. The last of its large roots snap. It's coming down!\n Seeing this, the paladin rolls out of the way, just as the mighty trunk lands directly on top of the golem, knocking it to the ground!\n Quickly, the paladin takes up his sword, rushes over to the struggling golem, and drives his blade through one of its glowing eyes. Shuddering, the golem crumbles.\n It becomes nothing but a pile of inert rocks and pebbles. You've won!");
+            Console.ReadLine();
+            Console.Clear();
+            golemFightchoiceTwoWinaftermath();
+        }
+        public static void golemFightchoiceoneaftermath()
+        {
+            //No sword, but at least you get a free trip to the stronghold
+            Console.WriteLine("The paladin is pleased with your strength. 'Great Barbarian!,' he declares, 'I could never have defeated such a foe without your aid. For this, I shall help you with one task before I return to my duties!'\n You consider what to ask the shiny, loud man, before deciding to ask him the location of the Ancient Stronghold.\n 'Ah! I know of such a place. You are close to it actually! Let me explain the path.'\n You now know the location of the stronghold! Saying a very quick goodbye, you hurry up the creekside and away from the chatty paladin.");
+            Console.ReadLine();
+            Console.Clear();
+            forestrightpathtakencampencounterTwo();
         }
         public static void golemFightchoiceTwo()
         {
@@ -834,7 +855,7 @@ namespace LevitheBarbarian
         public static void golemFightchoiceTwoBigMoment()
         {
             string choicethirteen;
-            //Here's where you need to pick back up the work.RIGHT. HERE.
+            //only one way to progress here
             Console.WriteLine("The golem's attacks are slow, but punishing. One wrong move will cost you your life. You notice the sword still hanging in its upper arm.\n The paladin is shouting something near the leaning tree on the bank above, but you cannot make it out.\n What will you do?\n 1: Run closer to the paladin, bringing the fight towards him.\n 2: Wait for the golem to attack, then use the sword in its arm to your advantage.\n 3: Wait for the golem to attack, then strike at its legs with your club. That was the plan, right?");
             Console.Write("Choice: ");
             choicethirteen = Console.ReadLine().ToLower();
@@ -846,6 +867,7 @@ namespace LevitheBarbarian
                 case "Run closer":
                 case "run closer":
                     {
+                        //the only path forward
                         Console.WriteLine("What is that damned paladin yelling about? He already got beaten! Deciding that it must be something useful, you move towards him.\n The large golem is in pursuit, determined to destroy the both of you.\n You also demand to know why the knight is throwing himself against the tree! Is his paladin brain broken? Then it dawns on you.\n The paladin is going to smash the golem with a giant club: An entire tree! And you're the bait! His brain is really smart after all!\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
@@ -853,9 +875,27 @@ namespace LevitheBarbarian
 
                         break;
                     }
-
-
-
+                case "2":
+                case "Wait":
+                case "wait":
+                    {
+                        //paste
+                        Console.WriteLine("Believing that you're fast enough to grab a small blade stuck in a massive golem's arm, you wait for it to swing its massive fist.\n As its fist comes crashing down, you manage to dodge the crushing blow, only to realize it attacked with the wrong arm!\n Cursing, you rush over to its other arm, hoping that it will attack. However, you fail to realize that fists are made of fingers.\n The golem catches you in its rocky grasp, and squeezes you into two, fleshy piles.");
+                        Console.ReadLine();
+                        Console.Clear();
+                        gameOver("Barbarians make a terrible paste.");
+                        break;
+                    }
+                case "3":
+                    {
+                        //pasty pancake
+                        Console.WriteLine("Waiting for the golem to attack, you dodge its massive fists as they crash into the rocky creek. Spinning around its fist, you swing your mighty club at its leg!\n Your stike is true, hitting the golem directly on its lower leg, cracking your club and sending pebbles flying.\n Angry at the golem for not falling down, you continue swinging your weapon madly at its leg as it slowly turns to respond.\n You soon learn that wood isn't as strong as stone, as your club shatters!\n Too distracted by your rage and revelation, you fail to react in time as the golem's fist pounds you into the ground, killing you instantly.");
+                        Console.ReadLine();
+                        Console.Clear();
+                        gameOver("Barbarians make a terrible paste.");
+                        break;
+                    }
+                
 
 
 
@@ -889,10 +929,12 @@ namespace LevitheBarbarian
         }
         public static void golemFightchoiceTwoBigMomentWinDetails()
         {
-            //BLOCK NEEDS TO BE FINISHED--probably back to the forst camp with all the other paths lol
+            //probably back to the forst camp with all the other paths lol
             Console.WriteLine("The golem has been knocked flat on the ground, struggling against the massive trunk of the fallen tree. The paladin is too tired to act.\n He calls out to you. 'Now! Destroy its head!'\n Shaken and in pain, you still find the energy to get back on your feet. Quickly, you notice the blade in the golem's flailing arm. This is your chance!\n Ignoring your shattered ribs, you call on all your barbarian stamina and strength as you grab the hilt lodged in the construct's arm, pulling it free.\n You don't bother checking the blade's condition. With a mighty roar, you remind the golem who shall slay it on this day as you drive the sword deep into one of its eyes.\n Shuddering, the glowing lights fade from its eyeholes. The stone golem crumbles into nothing but rubble.\n You've won!");
+            Console.ReadLine();
+            Console.Clear();
+            golemFightchoiceTwoWinaftermath();
 
-            
 
 
 
@@ -900,7 +942,17 @@ namespace LevitheBarbarian
 
 
         }
+        public static void golemFightchoiceTwoWinaftermath()
+        {
 
+            //HERE IS WHERE YOU GET THE SWORD. FIGURE OUT HOW TO WORK THE VARIABLES TO YOUR FAVOR
+            
+            Console.WriteLine("'You did it. We did it!' calls the wounded Paladin from the side of the creek. Nodding, you raise his sword in a heroic fashion, which inspires the injured man.\n 'You've proven yourself worthy in the eyes of my order. Please, keep my blade as a reward. I'm heading back home to rest...once I rest here.'\n The paladin passes out. What sort of weak man passes out from broken bones? Oh well. With your new weapon, a shining blade of great craftsmanship, you continue your quest.\n Climbing the steep sides of the creek, you wander back into the forest, swinging your new weapon about, when you catch the scent of smoke. A camp?\n You decide to investigate.");
+            Console.ReadLine();
+            Console.Clear();
+            forestrightpathtakencampencounter();
+
+        }
         public static void blurg()
         {
 
@@ -944,8 +996,14 @@ namespace LevitheBarbarian
             Console.Clear();
             strongholdPartone();
         }
-       
-        
+        public static void strongholdPartone()
+        {
+
+
+
+
+        }
+
         public static void gameOver(string deathText)
         {
             Console.BackgroundColor = ConsoleColor.Black;
