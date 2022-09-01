@@ -531,10 +531,7 @@ namespace LevitheBarbarian
                     {
                         string choiceten;
                         //ngl, choices within choices can get a little sticky.
-                        Console.WriteLine("Choosing violence is the barbarian way. With a yell, you swing your club at his helmet. Caught completely unaware, the man falls face first into the creek, likely dead.");
-                        Console.WriteLine("Ha! What a fool. Thinking that all his armor would save him from your mighty strength!");
-                        Console.WriteLine("Standing over his corpse, you consider looting the body. Who knows what treasures a man in knightly armor could have!");
-                        Console.WriteLine("Will you choose to loot him, or leave? You are on a quest, after all.");
+                        Console.WriteLine("Choosing violence is the barbarian way. With a yell, you swing your club at his helmet. Caught completely unaware, the man falls face first into the creek, likely dead.\n Ha! What a fool. Thinking that all his armor would save him from your mighty strength!\n Standing over his corpse, you consider looting the body. Who knows what treasures a man in knightly armor could have!\n Will you choose to loot him, or leave? You are on a quest, after all.");
                         Console.Write("Loot? or Leave?: ");
                         choiceten = Console.ReadLine().ToLower();
                         Console.Clear();
@@ -543,10 +540,8 @@ namespace LevitheBarbarian
                             case "loot":
                             case "Loot":
                                 {
-                                    Console.WriteLine("Greed gets the better of you. Turning the body over, you begin searching for anything of value.");
-                                    Console.WriteLine("However, while cursing loudly, trying to take off the man's chestplate, you don't hear the approaching, cumbling footsteps of a towering Rock Golem!");
-                                    Console.WriteLine("Caught completely unaware, it bashes you across the back of your head. Dying instantly,your body falls on top of your victim.");
-                                    Console.WriteLine("Press ENTER to continue");
+                                    //getting your head bashed in isn't too dignified. Call it karma for the greed.
+                                    Console.WriteLine("Greed gets the better of you. Turning the body over, you begin searching for anything of value.\n However, while cursing loudly, trying to take off the man's chestplate, you don't hear the approaching, cumbling footsteps of a towering Rock Golem!\n Caught completely unaware, it bashes you across the back of your head. Dying instantly,your body falls on top of your victim.\n Press ENTER to continue");
                                     Console.ReadLine();
                                     Console.Clear();
                                     gameOver("Greed is good, but death is always bad!");
@@ -555,11 +550,8 @@ namespace LevitheBarbarian
                             case "Leave":
                             case "leave":
                                 {
-                                    Console.WriteLine("The urge to loot the dead knight is strong, but your suspicious gets the better of you. What was a fully armored man doing in a creek?");
-                                    Console.WriteLine("You decide to leave the body alone. He didn't appear to have a visible sack of loot anyways.");
-                                    Console.WriteLine("Unsure of why the man was running around in a creek, or if he was even after you, you decide to leave the rocky creek and return to the forest.");
-                                    Console.WriteLine("After pushing through the dense trees aimlessly for some time, you come across a camp in a clearing! Cautiously, you approach.");
-                                    Console.WriteLine("Press ENTER to continue");
+                                    //another path to the camp encounter!
+                                    Console.WriteLine("The urge to loot the dead knight is strong, but your suspicious gets the better of you. What was a fully armored man doing in a creek?\n You decide to leave the body alone. He didn't appear to have a visible sack of loot anyways.\n Unsure of why the man was running around in a creek, or if he was even after you, you decide to leave the rocky creek and return to the forest.\n After pushing through the dense trees aimlessly for some time, you come across a camp in a clearing! Cautiously, you approach.\n Press ENTER to continue");
                                     Console.ReadLine();
                                     Console.Clear();
                                     forestrightpathtakencampencounter();
@@ -573,10 +565,8 @@ namespace LevitheBarbarian
                 case "confront":
                 case "Confront":
                     {
-                        Console.WriteLine("As the armored figure approaches, you consider just why there's an armored man chasing you. Could the smelly shaman have sold you out?");
-                        Console.WriteLine("You want answers!");
-                        Console.WriteLine("To hell with this hiding business. A barbarian faces their problems head on! Leaping around the corner, you confront the armored man head on!");
-                        Console.WriteLine("Press ENTER to continue");
+                        //paladin encounter! So sorry you've went this direction.
+                        Console.WriteLine("As the armored figure approaches, you consider just why there's an armored man chasing you. Could the smelly shaman have sold you out?\n You want answers!\n To hell with this hiding business. A barbarian faces their problems head on! Leaping around the corner, you confront the armored man head on!\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
                         confrontingThepaladin();
@@ -614,12 +604,8 @@ namespace LevitheBarbarian
         }
         public static void boarLeadstopaladinquest()
         {
-            Console.WriteLine("Soon, the Mooseboar gains quite a distance on you. Who knew that a four-legged animal could move so fast!");
-            Console.WriteLine("Making a mental note to smash legs and not eyes next time, you continue your pursuit, but it's apparent your quarry is getting away.");
-            Console.WriteLine("The beast has managed the impossible and escaped you. Now you find yourself at the bank of a wide, rocky creek between the tall trees.");
-            Console.WriteLine("You soon realize you're not alone! There's an armored man staring at you. Why is a knight in the middle of a creek in the woods?");
-            Console.WriteLine("A cunning barbarian such as yourself will find the answer. What were you doing before?");
-            Console.WriteLine("Press ENTER to continue");
+            //give up on chasing the boar and stumble into the paladin scenario.
+            Console.WriteLine("Soon, the Mooseboar gains quite a distance on you. Who knew that a four-legged animal could move so fast!\n Making a mental note to smash legs and not eyes next time, you continue your pursuit, but it's apparent your quarry is getting away.\n The beast has managed the impossible and escaped you. Now you find yourself at the bank of a wide, rocky creek between the tall trees.\n You soon realize you're not alone! There's an armored man staring at you. Why is a knight in the middle of a creek in the woods?\n A cunning barbarian such as yourself will find the answer. What were you doing before?\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             confrontingThepaladin();
@@ -630,11 +616,8 @@ namespace LevitheBarbarian
         }
         public static void paladinExposition()
         {
-            Console.WriteLine("You decided to listen to the Guffin's words. You may grow to regret this.");
-            Console.WriteLine("'As I mentioned, I am the great Ser Guffin, great paladin of The Holy Exposition, the glorious order of the realm. THIS realm, in fact.");
-            Console.WriteLine("I bet you're wondering what someone as well-equipped as I am doing out here? Well, let me spin you a great yarn.");
-            Console.WriteLine("A grand tale of adventure, betrayal, love, tragedy, comedey, and intrigue!'");
-            Console.WriteLine("Press ENTER to continue");
+            //it begins...you may regret this.
+            Console.WriteLine("You decided to listen to the Guffin's words. You may grow to regret this.\n 'As I mentioned, I am the great Ser Guffin, great paladin of The Holy Exposition, the glorious order of the realm. THIS realm, in fact.\n I bet you're wondering what someone as well-equipped as I am doing out here? Well, let me spin you a great yarn.\n A grand tale of adventure, betrayal, love, tragedy, comedey, and intrigue!'\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             expositionOne();
@@ -642,11 +625,8 @@ namespace LevitheBarbarian
         }
         public static void expositionOne()
         {
-            Console.WriteLine("'Precisely one month and two days ago, I awoke in a panic. My superior, Ser Exposi had barged into my chambers!");
-            Console.WriteLine("'He began recanting a lovely tale about his wife and fourteen children, and after two hours, he told me just why he decided to visit.");
-            Console.WriteLine("The King himself had given him a most sensitive quest, and time was of the essence! We had to act fast, else the King's bastard child would be in danger!");
-            Console.WriteLine("I know what you're thinking. Our great King has a bastard child? Well, it's actually a great story. Allow me to fill you in.'");
-            Console.WriteLine("Press ENTER to continue");
+            //I actually started getting sleepy writing this whole bit. That is how I knew it was perfect.
+            Console.WriteLine("'Precisely one month and two days ago, I awoke in a panic. My superior, Ser Exposi had barged into my chambers!\n 'He began recanting a lovely tale about his wife and fourteen children, and after two hours, he told me just why he decided to visit.\n The King himself had given him a most sensitive quest, and time was of the essence! We had to act fast, else the King's bastard child would be in danger!\n I know what you're thinking. Our great King has a bastard child? Well, it's actually a great story. Allow me to fill you in.'\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             expositionTwo();
@@ -656,10 +636,8 @@ namespace LevitheBarbarian
         }
         public static void expositionTwo()
         {
-            Console.WriteLine("'The King was not always the infallible being you know in the present. Eleven years ago, he was quite the wild one, spreading his...influence in many places.");
-            Console.WriteLine("In this case, his influence was most appreciated. In a village not too far from here, one of his mistresses went and had a child!");
-            Console.WriteLine("And that child was the King's first bastard. First, I hear you say? Well, there's actually four more. Allow me to elaborate.");
-            Console.WriteLine("Press ENTER to continue");
+            //think this is over? Not quite, love.
+            Console.WriteLine("'The King was not always the infallible being you know in the present. Eleven years ago, he was quite the wild one, spreading his...influence in many places.\n In this case, his influence was most appreciated. In a village not too far from here, one of his mistresses went and had a child!\n And that child was the King's first bastard. First, I hear you say? Well, there's actually four more. Allow me to elaborate.\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             expositionThree();
@@ -671,11 +649,8 @@ namespace LevitheBarbarian
         }
         public static void expositionThree()
         {
-            Console.WriteLine("'As I mentioned, there are four more bastard offspring of the King. Yes, there are five in total. As a paladin of The Holy Exposition, it's my duty to keep them all in check.");
-            Console.WriteLine("The first of the other four was a girl, and members of my order were tasked with keeping her from becoming a witch. An easy task, surely. However!");
-            Console.WriteLine("It was one which become monumentally more challenging once you consider the lineage of her mother, a witch from the bogwoods! Now, I bet you're wondering,");
-            Console.WriteLine("why did our King find the time to spread his seed that far out of the way of the kingdom? And why a witch? Well, let me tell you a story.");
-            Console.WriteLine("Press ENTER to continue...");
+            //still awake?
+            Console.WriteLine("'As I mentioned, there are four more bastard offspring of the King. Yes, there are five in total. As a paladin of The Holy Exposition, it's my duty to keep them all in check.\n The first of the other four was a girl, and members of my order were tasked with keeping her from becoming a witch. An easy task, surely. However!\n It was one which become monumentally more challenging once you consider the lineage of her mother, a witch from the bogwoods! Now, I bet you're wondering,\n why did our King find the time to spread his seed that far out of the way of the kingdom? And why a witch? Well, let me tell you a story.\n Press ENTER to continue...");
             Console.ReadLine();
             Console.Clear();
             expositionFour();
@@ -686,14 +661,8 @@ namespace LevitheBarbarian
         }
         public static void expositionFour()
         {
-            Console.WriteLine("'It all began when our King was still a prince, under the heel of his cruel father.'");
-            Console.WriteLine("For a blessed moment, the paladin finally stops talking. You begin to say somehting but are promptly cut off.");
-            Console.WriteLine("'A tragedy of love never realized! At least, not spiritually. Our King, the Prince at the time, grew fond of the witch, and vowed to return someday!");
-            Console.WriteLine("And though his father kept them apart until his death, the two eventually rejoined, rejoiced in each other's company for at least one night, and boom!");
-            Console.WriteLine("A daughter was born. Now, the King has been quite clear with his wishes, and demands we keep her away from the dark arts of her mother. However!");
-            Console.WriteLine("Her story has nothing to do with why I ended up in this creek, talking to you, my fine shirtless friend. For that tale starts somewhere else!");
-            Console.WriteLine("Allow me to explain.'");
-            Console.WriteLine("Better press ENTER to continue");
+            //you know the funny thing? None of this matters at all to this game.
+            Console.WriteLine("'It all began when our King was still a prince, under the heel of his cruel father.'\n For a blessed moment, the paladin finally stops talking. You begin to say somehting but are promptly cut off.\n 'A tragedy of love never realized! At least, not spiritually. Our King, the Prince at the time, grew fond of the witch, and vowed to return someday!\n And though his father kept them apart until his death, the two eventually rejoined, rejoiced in each other's company for at least one night, and boom!\n A daughter was born. Now, the King has been quite clear with his wishes, and demands we keep her away from the dark arts of her mother. However!\n Her story has nothing to do with why I ended up in this creek, talking to you, my fine shirtless friend. For that tale starts somewhere else!\n Allow me to explain.'\n Better press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             expositionFive();
@@ -702,14 +671,8 @@ namespace LevitheBarbarian
         }
         public static void expositionFive()
         {
-
-            Console.WriteLine("Your brain feels fuzzy. The paladin continues to talk at you.");
-            Console.WriteLine("'Friend! As I was saying before, if you remember from before the tale of the King's witch mistress, I was awoken by the great Ser Esposi.");
-            Console.WriteLine("And he had a mission for me, as no other paladin could be tasked with such a harrowing mission. His first bastard had been kidnapped by a merciless mage!");
-            Console.WriteLine("This fiend was once a mighty spellcaster who served the King, but after a lengthy plot to assassinate him failed, he fled deep into these woods,");
-            Console.WriteLine("possibly taking the bastard child hostage! Now, I know what you're thinking. Possibly? Well you see, there's a good reason we beleive the fiendish");
-            Console.WriteLine("fire thrower has taken the boy. It all began when...'");
-            Console.WriteLine("Press ENTER to...hey, what's that?");
+            //you're almost there!
+            Console.WriteLine("Your brain feels fuzzy. The paladin continues to talk at you.\n 'Friend! As I was saying before, if you remember from before the tale of the King's witch mistress, I was awoken by the great Ser Esposi.\n And he had a mission for me, as no other paladin could be tasked with such a harrowing mission. His first bastard had been kidnapped by a merciless mage!\n This fiend was once a mighty spellcaster who served the King, but after a lengthy plot to assassinate him failed, he fled deep into these woods,\n possibly taking the bastard child hostage! Now, I know what you're thinking. Possibly? Well you see, there's a good reason we beleive the fiendish\n fire thrower has taken the boy. It all began when...'\n Press ENTER to...hey, what's that?");
             Console.ReadLine();
             Console.Clear();
             expositionEnds();
@@ -721,13 +684,8 @@ namespace LevitheBarbarian
         }
         public static void expositionEnds()
         {
-            Console.WriteLine("The paladin's many words are like a curse on your mind. His stories bleeding into each other and meaning nothing to you.");
-            Console.WriteLine("However, staring blankly behind the paladin has paid off, as you see a massive, monstrous creature approaching!");
-            Console.WriteLine("'Quiet, Paladin!' you yell, waving your club towards the approaching monster. 'There's a golem coming!'");
-            Console.WriteLine("The paladin turns and sees the approaching foe. Finally shutting up, he draws the sword from his side.");
-            Console.WriteLine("'the mage has sent a golem to kill us!' he yells. 'Prepare youself, friend!'");
-            Console.WriteLine("Finally, something is happening! You prepare for the battle!");
-            Console.WriteLine("Press ENTER to continue");
+            //it finally ends and the golem fight begins.
+            Console.WriteLine("The paladin's many words are like a curse on your mind. His stories bleeding into each other and meaning nothing to you.\n However, staring blankly behind the paladin has paid off, as you see a massive, monstrous creature approaching!\n 'Quiet, Paladin!' you yell, waving your club towards the approaching monster. 'There's a golem coming!'\n The paladin turns and sees the approaching foe. Finally shutting up, he draws the sword from his side.\n 'the mage has sent a golem to kill us!' he yells. 'Prepare youself, friend!'\n Finally, something is happening! You prepare for the battle!\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             golemCreekbattle();
@@ -736,13 +694,8 @@ namespace LevitheBarbarian
         public static void golemCreekbattle()
         {
             string choiceeleven;
-
-            Console.WriteLine("A monstrous golem, appearing to be made of the very rock and smooth stones of the creek, towers above you and the paladin. Its body is double your height.");
-            Console.WriteLine("Dripping wet, it would be difficult to scale the construct by normal means and attack its small head.");
-            Console.WriteLine("You cannot predict how the paladin will act. How will you proceed?");
-            Console.WriteLine("1: Charge ahead of the paladin and swing your club at the golem's legs.");
-            Console.WriteLine("2: Wait for the paladin to make the first move.");
-            Console.WriteLine("3: Flee. There's no glory in fighting rocks!");
+            //so begins the golem fight
+            Console.WriteLine("A monstrous golem, appearing to be made of the very rock and smooth stones of the creek, towers above you and the paladin. Its body is double your height.\n Dripping wet, it would be difficult to scale the construct by normal means and attack its small head.\n You cannot predict how the paladin will act. How will you proceed?\n 1: Charge ahead of the paladin and swing your club at the golem's legs.\n 2: Wait for the paladin to make the first move.\n 3: Flee. There's no glory in fighting rocks!");
             Console.Write("Choice: ");
             choiceeleven = Console.ReadLine().ToLower();
             Console.Clear();
@@ -754,11 +707,8 @@ namespace LevitheBarbarian
                 case "charge":
                 case "charge ahead":
                     {
-
-                        Console.WriteLine("Shoving the paladin out of your way, you charge forward towards the large golem.");
-                        Console.WriteLine("Confidently, you swing your club at full force towards the golem's right leg. Pebbles go flying!");
-                        Console.WriteLine("You knew it! Wood beats rock! For a breif moment, you're filled with confidence!");
-                        Console.WriteLine("Press ENTER to continue");
+                        //a confident choice, charging towards danger.
+                        Console.WriteLine("Shoving the paladin out of your way, you charge forward towards the large golem.\n Confidently, you swing your club at full force towards the golem's right leg. Pebbles go flying!\n You knew it! Wood beats rock! For a breif moment, you're filled with confidence!\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
                         golemFightchoiceone();
@@ -770,10 +720,8 @@ namespace LevitheBarbarian
                 case "Wait":
                 case "wait for paladin":
                     {
-                        Console.WriteLine("Unsure of how to smash a creature made of stones, you wait for the paladin to make the first move.");
-                        Console.WriteLine("The paladin, gaze fixed on the towering construct, speaks to you. 'Aim for its head. We'll have to topple it!");
-                        Console.WriteLine("Break its rocky legs. Smash its head. Easy enough, right?");
-                        Console.WriteLine("Press ENTER to continue");
+                        //waiting for the paladin, was it good decision?
+                        Console.WriteLine("Unsure of how to smash a creature made of stones, you wait for the paladin to make the first move.\n The paladin, gaze fixed on the towering construct, speaks to you. 'Aim for its head. We'll have to topple it!\n Break its rocky legs. Smash its head. Easy enough, right?\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
                         golemFightchoiceTwo();
@@ -799,12 +747,8 @@ namespace LevitheBarbarian
         }
         public static void golemFightchoiceone()
         {
-            Console.WriteLine("Your tenacious strike has unfortunately did the damage you first thought it would.");
-            Console.WriteLine("The emotionless golem looks down at you, grabbing your club and crushing it, leaving you weaponless!");
-            Console.WriteLine("It punches you so hard that it knocks the breath out of you, sending you flying out of the creek and crashing into a nearby tree.");
-            Console.WriteLine("However, before it can pursue you and finish you off, the paladin intercepts it, gaining its attention with his own attack!");
-            Console.WriteLine("'Your fight is with me, golem!' he yells.");
-            Console.WriteLine("Press ENTER to continue");
+            //path followed if you chose to charge the golem
+            Console.WriteLine("Your tenacious strike has unfortunately did the damage you first thought it would.\n The emotionless golem looks down at you, grabbing your club and crushing it, leaving you weaponless!\n It punches you so hard that it knocks the breath out of you, sending you flying out of the creek and crashing into a nearby tree.\n However, before it can pursue you and finish you off, the paladin intercepts it, gaining its attention with his own attack!\n 'Your fight is with me, golem!' he yells.\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             golemFightchoiceonetwo();
@@ -815,12 +759,8 @@ namespace LevitheBarbarian
         public static void golemFightchoiceonetwo()
         {
             string choicetwelve;
-
-            Console.WriteLine("As you regain your footing, you notice how the paladin fights the golem, dodging its powerful stone punches and chipping away at its frame with his sword.");
-            Console.WriteLine("If only you had a giant hammer to smash this foe! This gives you an idea. Looking back at the leaning tree behind you, your barbarian brain goes into overtime.");
-            Console.WriteLine("Will you:");
-            Console.WriteLine("1: Rip off a large branch and rejoin the fight");
-            Console.WriteLine("2: Get behind the tree and push the entire thing down");
+            //path followed if you chose to wait for the paladin. Choose the next step wisely!
+            Console.WriteLine("As you regain your footing, you notice how the paladin fights the golem, dodging its powerful stone punches and chipping away at its frame with his sword.\n If only you had a giant hammer to smash this foe! This gives you an idea. Looking back at the leaning tree behind you, your barbarian brain goes into overtime.\n Will you:\n 1: Rip off a large branch and rejoin the fight\n 2: Get behind the tree and push the entire thing down");
             Console.Write("Choice: ");
             choicetwelve = Console.ReadLine().ToLower();
             Console.Clear();
@@ -829,13 +769,8 @@ namespace LevitheBarbarian
 
                 case "1":
                     {
-                        Console.WriteLine(" Reaching up into the leaning tree, you use your barbarian strength to rip out a thick, sturdy branch. It's like a giant club!");
-                        Console.WriteLine("Charging back into battle with your two-handed weapon, you yell 'Duck!' to the paladin as you prepare to swing the large branch.");
-                        Console.WriteLine("However, the paladin doesn't hear you, focusing too much on the monstrous golem swinging devastating punches his way.");
-                        Console.WriteLine("Unable to halt your massive swing, you hit the paladin across the head, taking most of the impact of your attack.");
-                        Console.WriteLine("The paladin slams into the golem, and bounces off its leg. The golem now focuses on you.");
-                        Console.WriteLine("Mistakes have been made.");
-                        Console.WriteLine("Press ENTER to continue");
+                        //this is the path to failure!
+                        Console.WriteLine("Reaching up into the leaning tree, you use your barbarian strength to rip out a thick, sturdy branch. It's like a giant club!\n Charging back into battle with your two-handed weapon, you yell 'Duck!' to the paladin as you prepare to swing the large branch.\n However, the paladin doesn't hear you, focusing too much on the monstrous golem swinging devastating punches his way.\n Unable to halt your massive swing, you hit the paladin across the head, taking most of the impact of your attack.\n The paladin slams into the golem, and bounces off its leg. The golem now focuses on you.\n Mistakes have been made.\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
                         golemFightchoiceonefail();
@@ -846,12 +781,8 @@ namespace LevitheBarbarian
                     }
                case "2":
                     {
-                        Console.WriteLine("Why take a branch to smash when you can use the entire tree? It only makes sense.");
-                        Console.WriteLine("Taking a few steps behind the tree, you run full force into its trunk, shaking the entire trunk and snapping some roots.");
-                        Console.WriteLine("Keep at it! A few more tackles and it will fall! You yell at the paladin, who's noticed the cracking and shaking tree already.");
-                        Console.WriteLine("'Move it to position!' you shout. Nodding, the paladin refocuses on the golem swinging heavy punches at him, moving it slowly into position.");
-                        Console.WriteLine("You run full force into the tree again. One more time and it will fall!");
-                        Console.WriteLine("Press ENTER to continue");
+                        //path to success!
+                        Console.WriteLine("Why take a branch to smash when you can use the entire tree? It only makes sense.\n Taking a few steps behind the tree, you run full force into its trunk, shaking the entire trunk and snapping some roots.\n Keep at it! A few more tackles and it will fall! You yell at the paladin, who's noticed the cracking and shaking tree already.\n 'Move it to position!' you shout. Nodding, the paladin refocuses on the golem swinging heavy punches at him, moving it slowly into position.\n You run full force into the tree again. One more time and it will fall!\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
                         golemFightchoiceonewin();
@@ -872,43 +803,29 @@ namespace LevitheBarbarian
         }
         public static void golemFightchoiceonefail()
         {
-            Console.WriteLine("Without the paladin to help you, the golem's focus is entirely on you. Emotionless, it moves forward, intent on crushing you.");
-            Console.WriteLine("With a furious roar, you launch yourself at the stone golem, swinging the large branch at its small head. Unfortunately, the branch is intercepted by its massive hands.");
-            Console.WriteLine("With ease, it crushes your new club, and immedately throws a punch at you once again. You try to block, but your bones are shattered.");
-            Console.WriteLine("You learn the hard way that wood and flesh are not as hard as stone. Pummeled into a fleshy pile, your story ends here.");
-            Console.WriteLine("Press ENTER to continue.");
+            //the golem pummels you into a fleshy paste here
+            Console.WriteLine("Without the paladin to help you, the golem's focus is entirely on you. Emotionless, it moves forward, intent on crushing you.\n With a furious roar, you launch yourself at the stone golem, swinging the large branch at its small head. Unfortunately, the branch is intercepted by its massive hands.\n With ease, it crushes your new club, and immedately throws a punch at you once again. You try to block, but your bones are shattered.\n You learn the hard way that wood and flesh are not as hard as stone. Pummeled into a fleshy pile, your story ends here.\n Press ENTER to continue.");
             Console.ReadLine();
             gameOver(" Maybe you should have went with a bigger club.");
             
         }
         public static void golemFightchoiceonewin()
         {
-            Console.WriteLine("You can see that the paladin has moved the mindless golem into position. Now's your chance!");
-            Console.WriteLine("Ignoring your bruises and pain, you charge full force once more into the tree. The last of its large roots snap. It's coming down! ");
-            Console.WriteLine("Seeing this, the paladin rolls out of the way, just as the mighty trunk lands directly on top of the golem, knocking it to the ground!");
-            Console.WriteLine("Quickly, the paladin takes up his sword, rushes over to the struggling golem, and drives his blade through one of its glowing eyes. Shuddering, the golem crumbles.");
-            Console.WriteLine("It becomes nothing but a pile of inert rocks and pebbles. You've won!");
+            //victory over the golem!Make sure to COME BACK AND FINISH THIS BLOCK. It doesn't lead anywhere yet
+            Console.WriteLine("You can see that the paladin has moved the mindless golem into position. Now's your chance!\n Ignoring your bruises and pain, you charge full force once more into the tree. The last of its large roots snap. It's coming down!\n Seeing this, the paladin rolls out of the way, just as the mighty trunk lands directly on top of the golem, knocking it to the ground!\n Quickly, the paladin takes up his sword, rushes over to the struggling golem, and drives his blade through one of its glowing eyes. Shuddering, the golem crumbles.\n It becomes nothing but a pile of inert rocks and pebbles. You've won!");
         }
         public static void golemFightchoiceTwo()
         {
-            Console.WriteLine("The golem makes the first move, slamming its giant stone fist downwards towards you. Prepared, you dodge the attack just in time.");
-            Console.WriteLine("The paladin makes his move. Taking up his sword, he slashes the golems upper leg, sending pebbles flying.");
-            Console.WriteLine("You also go on the attack. While the golem is raising its stone fists, you swing your wood club at its arm, testing your foe's durability.");
-            Console.WriteLine("Some pebbles fly, but not many. Your club is dented.");
-            Console.WriteLine("You wonder just how you're going to smash this foe.");
-            Console.WriteLine("Press ENTER to continue");
+            //a bit longer path to possible victory
+            Console.WriteLine("The golem makes the first move, slamming its giant stone fist downwards towards you. Prepared, you dodge the attack just in time.\n The paladin makes his move. Taking up his sword, he slashes the golems upper leg, sending pebbles flying.\n You also go on the attack. While the golem is raising its stone fists, you swing your wood club at its arm, testing your foe's durability.\n Some pebbles fly, but not many. Your club is dented.\n You wonder just how you're going to smash this foe.\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             golemFightchoiceTwocontinued();
         }
         public static void golemFightchoiceTwocontinued()
         {
-            Console.WriteLine("The paladin barely dodges the golem's slow, powerful fist, bringing down his blade into the construct's arm. It goes clean through the joint!");
-            Console.WriteLine("If the golem can feel pain, it's impossible to tell. However, the paladin sure does.");
-            Console.WriteLine("Grabbing the knight by his leg, the golem slams him to the ground before tossing him against a nearby leaning tree.");
-            Console.WriteLine("Groaning as he struggles to find his footing, it's amazing he's alive at all. Now it's just you and your foe. No one to get in the way!");
-            Console.WriteLine("The Golem slowly turns to you. You remind yourself that you wanted this fight.");
-            Console.WriteLine("Press ENTER to continue");
+            //fight with golem continues
+            Console.WriteLine("The paladin barely dodges the golem's slow, powerful fist, bringing down his blade into the construct's arm. It goes clean through the joint!\n If the golem can feel pain, it's impossible to tell. However, the paladin sure does.\n Grabbing the knight by his leg, the golem slams him to the ground before tossing him against a nearby leaning tree.\n Groaning as he struggles to find his footing, it's amazing he's alive at all. Now it's just you and your foe. No one to get in the way!\n The Golem slowly turns to you. You remind yourself that you wanted this fight.\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             golemFightchoiceTwoBigMoment();
@@ -917,13 +834,8 @@ namespace LevitheBarbarian
         public static void golemFightchoiceTwoBigMoment()
         {
             string choicethirteen;
-
-            Console.WriteLine("The golem's attacks are slow, but punishing. One wrong move will cost you your life. You notice the sword still hanging in its upper arm.");
-            Console.WriteLine("The paladin is shouting something near the leaning tree on the bank above, but you cannot make it out.");
-            Console.WriteLine("What will you do?");
-            Console.WriteLine("1: Run closer to the paladin, bringing the fight towards him.");
-            Console.WriteLine("2: Wait for the golem to attack, then use the sword in its arm to your advantage.");
-            Console.WriteLine("3: Wait for the golem to attack, then strike at its legs with your club. That was the plan, right?");
+            //Here's where you need to pick back up the work.RIGHT. HERE.
+            Console.WriteLine("The golem's attacks are slow, but punishing. One wrong move will cost you your life. You notice the sword still hanging in its upper arm.\n The paladin is shouting something near the leaning tree on the bank above, but you cannot make it out.\n What will you do?\n 1: Run closer to the paladin, bringing the fight towards him.\n 2: Wait for the golem to attack, then use the sword in its arm to your advantage.\n 3: Wait for the golem to attack, then strike at its legs with your club. That was the plan, right?");
             Console.Write("Choice: ");
             choicethirteen = Console.ReadLine().ToLower();
             Console.Clear();
@@ -934,12 +846,7 @@ namespace LevitheBarbarian
                 case "Run closer":
                 case "run closer":
                     {
-                        Console.WriteLine("What is that damned paladin yelling about? He already got beaten! Deciding that it must be something useful, you move towards him.");
-                        Console.WriteLine("The large golem is in pursuit, determined to destroy the both of you.");
-                        Console.WriteLine("Now just below him, you plant your feet angirly in the rocky creek, demanding that he speak up, and fast! The golem is seconds behind you.");
-                        Console.WriteLine("You also demand to know why the knight is throwing himself against the tree! Is his paladin brain broken? Then it dawns on you.");
-                        Console.WriteLine("The paladin is going to smash the golem with a giant club: An entire tree! And you're the bait! His brain is really smart after all!");
-                        Console.WriteLine("Press ENTER to continue");
+                        Console.WriteLine("What is that damned paladin yelling about? He already got beaten! Deciding that it must be something useful, you move towards him.\n The large golem is in pursuit, determined to destroy the both of you.\n You also demand to know why the knight is throwing himself against the tree! Is his paladin brain broken? Then it dawns on you.\n The paladin is going to smash the golem with a giant club: An entire tree! And you're the bait! His brain is really smart after all!\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
                         golemFightchoiceTwoBigMomentWin();
@@ -966,12 +873,8 @@ namespace LevitheBarbarian
         }
         public static void golemFightchoiceTwoBigMomentWin()
         {
-            Console.WriteLine("The golem has caught up to you.");
-            Console.WriteLine("Oblivious of the paladin's plan, its focus is entirely on you. Raising its massive fist for an attack, you know you cannot let it move from its current spot.");
-            Console.WriteLine("If you dodge, the golem will continue its mindless pursuit and move out of the way. Confidently, you raise your club, hoping it will absorb enough of the incoming attack.");
-            Console.WriteLine("You might just survive! Before you have time to think it over, a massive stone fist crashes down on you. The club shatters, and you're sent flying into the bank.");
-            Console.WriteLine("Before the construct has a chance to move, the final roots holding the nearby tree snap, and it comes crashing down on the golem!");
-            Console.WriteLine("Press ENTER to continue");
+            //smashing the golem with a really big club is a genious idea
+            Console.WriteLine("The golem has caught up to you.\n Oblivious of the paladin's plan, its focus is entirely on you. Raising its massive fist for an attack, you know you cannot let it move from its current spot.\n If you dodge, the golem will continue its mindless pursuit and move out of the way. Confidently, you raise your club, hoping it will absorb enough of the incoming attack.\n You might just survive! Before you have time to think it over, a massive stone fist crashes down on you. The club shatters, and you're sent flying into the bank.\n Before the construct has a chance to move, the final roots holding the nearby tree snap, and it comes crashing down on the golem!\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             golemFightchoiceTwoBigMomentWinDetails();
@@ -986,13 +889,8 @@ namespace LevitheBarbarian
         }
         public static void golemFightchoiceTwoBigMomentWinDetails()
         {
-            Console.WriteLine("The golem has been knocked flat on the ground, struggling against the massive trunk of the fallen tree. The paladin is too tired to act.");
-            Console.WriteLine("He calls out to you. 'Now! Destroy its head!'");
-            Console.WriteLine("Shaken and in pain, you still find the energy to get back on your feet. Quickly, you notice the blade in the golem's flailing arm. This is your chance!");
-            Console.WriteLine("Ignoring your shattered ribs, you call on all your barbarian stamina and strength as you grab the hilt lodged in the construct's arm, pulling it free.");
-            Console.WriteLine("You don't bother checking the blade's condition. With a mighty roar, you remind the golem who shall slay it on this day as you drive the sword deep into one of its eyes.");
-            Console.WriteLine("Shuddering, the glowing lights fade from its eyeholes. The stone golem crumbles into nothing but rubble.");
-            Console.WriteLine("You've won!");
+            //BLOCK NEEDS TO BE FINISHED--probably back to the forst camp with all the other paths lol
+            Console.WriteLine("The golem has been knocked flat on the ground, struggling against the massive trunk of the fallen tree. The paladin is too tired to act.\n He calls out to you. 'Now! Destroy its head!'\n Shaken and in pain, you still find the energy to get back on your feet. Quickly, you notice the blade in the golem's flailing arm. This is your chance!\n Ignoring your shattered ribs, you call on all your barbarian stamina and strength as you grab the hilt lodged in the construct's arm, pulling it free.\n You don't bother checking the blade's condition. With a mighty roar, you remind the golem who shall slay it on this day as you drive the sword deep into one of its eyes.\n Shuddering, the glowing lights fade from its eyeholes. The stone golem crumbles into nothing but rubble.\n You've won!");
 
             
 
@@ -1009,10 +907,7 @@ namespace LevitheBarbarian
         }
         public static void confrontingThepaladin()
         {
-            Console.WriteLine("'Who are you!?' you demand loudly. Aggressively, you raise your club in a battle stance.");
-            Console.WriteLine("The armored man bows to you, making you uneasy. 'I am Ser Guffin, paladin of this realm. Please, lower your weapon. I need your help!'");
-            Console.WriteLine("Help this man? You begin to wonder what could be in it for you. ");
-            Console.WriteLine("Press ENTER to continue");
+            Console.WriteLine("'Who are you!?' you demand loudly. Aggressively, you raise your club in a battle stance.\n The armored man bows to you, making you uneasy. 'I am Ser Guffin, paladin of this realm. Please, lower your weapon. I need your help!'\n Help this man? You begin to wonder what could be in it for you.\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
             paladinExposition();
