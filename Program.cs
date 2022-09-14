@@ -4,9 +4,60 @@ namespace LevitheBarbarian
 {
     internal class Program
     {
+        //this is the global variable used to determine the endgame, which changes based on the weapon you use. Should be initally set as "club" but can possibly be changed.
+
+
+       class Weapon
+        {
+            public int counter;
+
+        }
+         
+        static class WeaponType
+        {
+            public static int counter;
+        }
+
+        static class WeaponName
+        {
+
+            static void Main(string[] args)
+            {
+                Weapon a = new Weapon();
+                a.counter = 1;
+                Console.WriteLine("Weapon: " + a.counter);
+
+                Weapon b = new Weapon();
+                b.counter = 2;
+                Console.WriteLine("Weapon: " + b.counter);
+
+                Weapon c = new Weapon();
+                c.counter = 3;
+                Console.WriteLine("Weapon: " + c.counter);
+
+                if (a.counter == 1)
+                {
+                    Console.WriteLine("club");
+                }
+                if (b.counter == 2)
+                {
+                    Console.WriteLine("tusk");
+                }
+                if (c.counter == 3)
+                {
+                    Console.WriteLine("sword");
+                }
+            }
+        }
+        
+
+        
+        
+
         static void Main(string[] args)
         {
             gameTitle();
+            first();
         }
         public static void gameTitle()
         {
@@ -40,7 +91,7 @@ namespace LevitheBarbarian
             Console.WriteLine(s);
             Console.ReadLine();
             Console.Clear();
-            first();
+
         }
         public static void first()
         {
@@ -946,7 +997,7 @@ namespace LevitheBarbarian
         {
 
             //HERE IS WHERE YOU GET THE SWORD. FIGURE OUT HOW TO WORK THE VARIABLES TO YOUR FAVOR
-            
+
             Console.WriteLine("'You did it. We did it!' calls the wounded Paladin from the side of the creek. Nodding, you raise his sword in a heroic fashion, which inspires the injured man.\n 'You've proven yourself worthy in the eyes of my order. Please, keep my blade as a reward. I'm heading back home to rest...once I rest here.'\n The paladin passes out. What sort of weak man passes out from broken bones? Oh well. With your new weapon, a shining blade of great craftsmanship, you continue your quest.\n Climbing the steep sides of the creek, you wander back into the forest, swinging your new weapon about, when you catch the scent of smoke. A camp?\n You decide to investigate.");
             Console.ReadLine();
             Console.Clear();
