@@ -402,6 +402,7 @@ namespace LevitheBarbarian
         public static void huntsMenhelpyou()
         {
             //I wonder how many people will take the easy route with the huntsmen helping?
+            //hihi
             Console.WriteLine("You tell the story of the attack on your village, how you single-handedly slaughtered three dozen bandits, and how the feelble village shaman asked you for help.\n The huntsmen have formed a circle around you, listening intently to your every word.\n When you tale finally ends, they are left in awe of your strength.\n 'Mighty warrior, we would be happy to help you save your village. However, we must soon return to our own kingdom across the mountains.\n However, I can personally lead you to this stronghold you speak of. We set up camp there not two nights ago!'\n With your poor sense of direction, you happily agree to the escort to the stronghold. Looks like you're making better time than you ever imagined!\n Press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
