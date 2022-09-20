@@ -7,48 +7,7 @@ namespace LevitheBarbarian
         //this is the global variable used to determine the endgame, which changes based on the weapon you use. Should be initally set as "club" but can possibly be changed.
 
 
-       class Weapon
-        {
-            public int counter;
-
-        }
-         
-        static class WeaponType
-        {
-            public static int counter;
-        }
-
-        static class WeaponName
-        {
-
-            static void Main(string[] args)
-            {
-                Weapon a = new Weapon();
-                a.counter = 1;
-                Console.WriteLine("Weapon: " + a.counter);
-
-                Weapon b = new Weapon();
-                b.counter = 2;
-                Console.WriteLine("Weapon: " + b.counter);
-
-                Weapon c = new Weapon();
-                c.counter = 3;
-                Console.WriteLine("Weapon: " + c.counter);
-
-                if (a.counter == 1)
-                {
-                    Console.WriteLine("club");
-                }
-                if (b.counter == 2)
-                {
-                    Console.WriteLine("tusk");
-                }
-                if (c.counter == 3)
-                {
-                    Console.WriteLine("sword");
-                }
-            }
-        }
+       
         
 
         
