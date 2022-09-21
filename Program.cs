@@ -17,7 +17,8 @@ namespace LevitheBarbarian
         
         public void AssignStarterWeapon()
         {
-            chosenWeapon.name = "club";
+            
+            chosenWeapon.name = "club ";
             chosenWeapon.weapon = 0;
 
         }
@@ -71,7 +72,7 @@ namespace LevitheBarbarian
 
             
 
-            Console.WriteLine("You are Levi the Barbarian, savage warrior from the small village of Normia. After an evening of mild debauchery and howling at the gods, you awaken to panicked knocks on your hut's door.\n What will you do?");
+            Console.WriteLine("You are Levi the Barbarian, savage warrior from the small village of Normia who loves his " + chosenWeapon.weapon + ". After an evening of mild    debauchery and howling at the gods, you awaken to panicked knocks on your hut's door.\n What will you do?");
             Console.WriteLine("1. Go back to bed. I'ts probably nothing.");
             Console.WriteLine("2. Go to the door and see what's going on.");
             Console.WriteLine("3. Cautiously approach the door. It could be anyone!");
@@ -447,7 +448,7 @@ namespace LevitheBarbarian
                 case "attack 1":
                 case "Attack 1":
                     {
-                        Console.WriteLine("With a mighty yell, you swing your wooden "+chosenWeapon.name+" downwards, directly at the beast's snout.\n However, the Mooseboar's antlers deflect the attack. Agitated, the beast immediately charges!\n Still off balance, you can do little as the giant beast grabs you with its mouth and slings you to the entrance of the cave.\n Dazed, you are barely on your feet before getting impaled by the beast's tusks and merciless antlers!\n You take some pleasure knowing that it will be days before the Mooseboar can remove your body from its face.\n Press ENTER to continue.");
+                        Console.WriteLine("With a mighty yell, you swing your "+chosenWeapon.name+" downwards, directly at the beast's snout.\n However, the Mooseboar's antlers deflect the attack. Agitated, the beast immediately charges!\n Still off balance, you can do little as the giant beast grabs you with its mouth and slings you to the entrance of the cave.\n Dazed, you are barely on your feet before getting impaled by the beast's tusks and merciless antlers!\n You take some pleasure knowing that it will be days before the Mooseboar can remove your body from its face.\n Press ENTER to continue.");
                         Console.ReadLine();
                         gameOver(" Well...at least no one was around to see your shameful demise.");
                         break;

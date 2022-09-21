@@ -8,7 +8,9 @@ namespace LevitheBarbarian
 {
     public class Weapon
     {
-        public int weapon;
         public string name;
+
+        public int weapon;
+        
     }
 }
