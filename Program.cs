@@ -2,21 +2,24 @@
 
 namespace LevitheBarbarian
 {
-    public class Program
+    class Program
     {
         public Weapon chosenWeapon = new Weapon();
 
-        public void Main(string[] args)
-        {
+        public static void Main(string[] args)
+        {            
+            Program program = new Program();
+            program.gameTitle();
+            program.first();
             
-            gameTitle();
-            first();
+           
         }
         
         public void AssignStarterWeapon()
         {
             chosenWeapon.name = "club";
             chosenWeapon.weapon = 0;
+
         }
 
         public void gameTitle()
@@ -53,6 +56,7 @@ namespace LevitheBarbarian
             Console.Clear();
 
         }
+
         public void first()
         {
             
@@ -107,7 +111,7 @@ namespace LevitheBarbarian
                 case "Cautiously approach":
                 case "Cautiously approach.":
                     {
-                        Console.WriteLine("Using your wits, you approach your door quietly, dodging some disheveled skulls on the ground.\n Making a mental note to organize them later, you reach your wooden door with ease.\n 'Who goes there!'you demand. 'Tis I, little Pat from the butcher's shop!', calls a meek voice from the other side of the door.\n 'Bandits are attacking the village!', he yells. 'Won't you save us, mighty Levi?'\n Ever seeking glory, you eagerly agree, grabbing your favorite axe before swinging the door open, charging to meet your foes head on!\n Press ENTER to continue");
+                        Console.WriteLine("Using your wits, you approach your door quietly, dodging some disheveled skulls on the ground.\n Making a mental note to organize them later, you reach your wooden door with ease.\n 'Who goes there!'you demand.    'Tis I, little Pat from the butcher's shop!', calls a meek voice from the other side of the door.\n 'Bandits are attacking the village!', he yells. 'Won't you save us, mighty Levi?'\n Ever seeking glory, you eagerly agree, grabbing your favorite axe before swinging the door open, charging to meet your foes head on!\n Press ENTER to continue");
                         Console.ReadLine();
                         Console.Clear();
                         second();
@@ -468,23 +472,20 @@ namespace LevitheBarbarian
                             case "side":
                                 {
                                     string choiceeight;
-                                    chosenWeapon.name = "mooseboar tusk";
-                                    chosenWeapon.weapon = 1;
+                                    
                                     //this part is where you collect the tusk for a weapon. Ideally, it's going to work like a variable. I'll figure this out soon.
 
                                     Console.WriteLine("You swing your "+chosenWeapon.name+" with all your might, slamming it into the side of the Mooseboar. You hear ribs snap.\n The beast squeals in pain, trying its best to throw you from its back. In its panic, it charges towards the cave!\n Sensing the danger, you leap from the Mooseboar's back, rolling to the ground as it slams full force into the rocks.\n There is a deep rumbling noise emanating from the cave as cracks form in the stones. The cavern collapses, burying the beast.\n Only the Mooseboar's tusk is visible from the collapsed cave. Dissappointed in the lack of meal, you consider taking it for a trophy.\n Will you take the large tusk? Yes or No?");
                                     Console.Write("Choice: ");
                                     choiceeight = Console.ReadLine().ToLower();
+                                    chosenWeapon.name = "mooseboar tusk";
+                                    chosenWeapon.weapon = 1;
                                     Console.Clear();
                                     switch (choiceeight)
                                     {
                                         case "Yes":
                                         case "yes":
                                             {
-
-                                                Boolean hasMooseboarTusk = true;
-
-                                                if (hasMooseboarTusk)
                                                     //back to the camp encounter
                                                 Console.WriteLine("Wanting some sort of trophy for your wasted time, you pry a the tusk from the crushed Mooseboar. An easy task for someone with your strength.\n Though dissappointed at the loss of all that protein, you tie the meter long tusk to the side of your belt and press onward, back into the forest\n Not too long into your trek, you notice a small camp set in a small clearing between the trees! Cautiously, you approach.\n Press ENTER to continue");
                                                 Console.ReadLine();
@@ -701,10 +702,6 @@ namespace LevitheBarbarian
             Console.Clear();
             expositionEnds();
 
-
-
-
-
         }
         public void expositionEnds()
         {
@@ -754,19 +751,7 @@ namespace LevitheBarbarian
 
                     }
 
-
-
-
-
-
-
-
-
-
-
             }
-
-
 
         }
         public void golemFightchoiceone()
@@ -840,7 +825,7 @@ namespace LevitheBarbarian
         }
         public void golemFightchoiceoneaftermath()
         {
-            //No sword, but at least you get a free trip to the stronghold
+            //No sword or tusk, but at least you get a free trip to the stronghold
             Console.WriteLine("The paladin is pleased with your strength. 'Great Barbarian!,' he declares, 'I could never have defeated such a foe without your aid. For this, I shall help you with one task before I return to my duties!'\n You consider what to ask the shiny, loud man, before deciding to ask him the location of the Ancient Stronghold.\n 'Ah! I know of such a place. You are close to it actually! Let me explain the path.'\n You now know the location of the stronghold! Saying a very quick goodbye, you hurry up the creekside and away from the chatty paladin.");
             Console.ReadLine();
             Console.Clear();
@@ -906,20 +891,8 @@ namespace LevitheBarbarian
                         gameOver("Barbarians make a terrible paste.");
                         break;
                     }
-                
-
-
-
-
                    
             }
-                
-
-
-
-
-
-
 
         }
         public void golemFightchoiceTwoBigMomentWin()
@@ -931,12 +904,6 @@ namespace LevitheBarbarian
             golemFightchoiceTwoBigMomentWinDetails();
 
 
-
-
-
-
-
-
         }
         public void golemFightchoiceTwoBigMomentWinDetails()
         {
@@ -945,10 +912,6 @@ namespace LevitheBarbarian
             Console.ReadLine();
             Console.Clear();
             golemFightchoiceTwoWinaftermath();
-
-
-
-
 
         }
         public void golemFightchoiceTwoWinaftermath()
@@ -984,7 +947,7 @@ namespace LevitheBarbarian
 
             Console.WriteLine("                                                                                            ");
             Console.WriteLine("                                                                                            ");
-            Console.WriteLine("                                What will you find in the"                                    );
+            Console.WriteLine("                                What awaits you in the"                                    );
             Console.WriteLine("                                                                                            ");
             Console.WriteLine("     ▄▄▄█████▓ ██░ ██ ▓█████     ▄▄▄       ███▄    █  ▄████▄   ██▓▓█████  ███▄    █ ▄▄▄█████▓");
             Console.WriteLine("     ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀    ▒████▄     ██ ▀█   █ ▒██▀ ▀█  ▓██▒▓█   ▀  ██ ▀█   █ ▓  ██▒ ▓▒");
@@ -1009,7 +972,7 @@ namespace LevitheBarbarian
         }
         public void strongholdPartone()
         {
-
+            Console.WriteLine("With your " +chosenWeapon.name+" at your side, you venture forth into the imposing structure. ");
 
 
 
