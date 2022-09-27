@@ -9,19 +9,14 @@ namespace LevitheBarbarian
         public static void Main(string[] args)
         {            
             Program program = new Program();
+            program.chosenWeapon.AssignStarterWeapon();
             program.gameTitle();
             program.first();
             
            
         }
         
-        public void AssignStarterWeapon()
-        {
-            
-            chosenWeapon.name = "club ";
-            chosenWeapon.weapon = 0;
 
-        }
 
         public void gameTitle()
         {
@@ -72,7 +67,7 @@ namespace LevitheBarbarian
 
             
 
-            Console.WriteLine("You are Levi the Barbarian, savage warrior from the small village of Normia who loves his " + chosenWeapon.weapon + ". After an evening of mild    debauchery and howling at the gods, you awaken to panicked knocks on your hut's door.\n What will you do?");
+            Console.WriteLine("You are Levi the Barbarian, savage warrior from the small village of Normia who loves his " + chosenWeapon.name + ". After an evening of mild debauchery and howling at the gods, you awaken to panicked knocks on your hut's door.\n What will you do?");
             Console.WriteLine("1. Go back to bed. I'ts probably nothing.");
             Console.WriteLine("2. Go to the door and see what's going on.");
             Console.WriteLine("3. Cautiously approach the door. It could be anyone!");

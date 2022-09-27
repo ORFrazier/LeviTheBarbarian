@@ -11,6 +11,12 @@ namespace LevitheBarbarian
         public string name;
 
         public int weapon;
-        
+        public void AssignStarterWeapon()
+        {
+
+            name = "club ";
+            weapon = 0;
+
+        }
     }
 }
