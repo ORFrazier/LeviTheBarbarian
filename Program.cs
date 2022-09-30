@@ -67,7 +67,7 @@ namespace LevitheBarbarian
 
             
 
-            Console.WriteLine("You are Levi the Barbarian, savage warrior from the small village of Normia who loves his " + chosenWeapon.name + ". After an evening of mild debauchery and howling at the gods, you awaken to panicked knocks on your hut's door.\n What will you do?");
+            Console.WriteLine("You are Levi the Barbarian, savage warrior from the small village of Normia. After an evening of mild debauchery and howling at the gods, you awaken to panicked knocks on your hut's door.\n What will you do?");
             Console.WriteLine("1. Go back to bed. I'ts probably nothing.");
             Console.WriteLine("2. Go to the door and see what's going on.");
             Console.WriteLine("3. Cautiously approach the door. It could be anyone!");
@@ -968,12 +968,64 @@ namespace LevitheBarbarian
         }
         public void strongholdPartone()
         {
-            Console.WriteLine("With your " +chosenWeapon.name+" at your side, you venture forth into the imposing structure. ");
+            Console.WriteLine("With your " +chosenWeapon.name+" firmly at your side, you venture forth into the imposing stone structure. A long, dark hallway, sparsely lit by torches, awaits.\n Now you can finally get the golden skull and finish your quest! However, something catches your attention.\n Torches are lit further within the stronghold, and fresh spats of blood cover the grimy walls. It is obvious that you're not alone.\n Undeterred, you venture deeper.");
+            Console.ReadLine();
+            Console.Clear();
+            strongholdPartTwo();
+        }
+        public void strongholdPartTwo()
+        {
+            string choiceFourteen;
+            Console.WriteLine("Taking a torch from the wall with your free hand, your descent into the dark halls of the stronghold continue. The air is nearly still here, becoming colder and more foul with every step.\n Soon, you come to two, sealed wooder doors on either side of you. The left one is creaked open, but whatever awaits inside is in total darkness.\n The right door is completely sealed, though you think you hear the sounds of a crackling brazier within.\n Which one do you choose?\n Select 1: Left Door, or 2: Right Door");
+            Console.Write("Choice: ");
+            choiceFourteen = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch(choiceFourteen)
+            {
+                case "1":
+                case "Left Door":
+                case "left Door":
+                case "Left door":
+                case "left door":
+                case "left":
+                case "Left":
+                    {
+
+                        Console.WriteLine("Why bother with a door that could be locked? What do you, a mighty barbarian, have to fear from a dark room?\n With your free hand, you push against the left door, which gives without a fight. Torch raised, you enter the unknown.\n Press ENTER to continue");
+                        Console.ReadLine();
+                        Console.Clear();
+                        strongholdShadowPath();
+                        break;
+                    }
+                case "2":
+                case "Right Door":
+                case "right door":
+                case "right Door":
+                case "Right door":
+                case "right":
+                case "Right":
+                    {
+                        Console.WriteLine("");
+
+                        break;
+                    }
+
+
+
+
+
+
+
+
+            }
+
+        }
+        public void strongholdShadowPath()
+        {
 
 
 
         }
-
         public void gameOver(string deathText)
         {
             Console.BackgroundColor = ConsoleColor.Black;
