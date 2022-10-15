@@ -1022,9 +1022,39 @@ namespace LevitheBarbarian
         }
         public void strongholdShadowPath()
         {
-
-
-
+            string choiceFifteen;
+            Console.WriteLine("Your torch illuminates the shadowy room, revealing more signs of a recent struggle. A bloody dagger lays discarded on the floor, its owner unknown.\n The smell of death begins to fill your nose as you move further into the room, revealing a destroyed table and chairs.\n Someone, or something, was smashed into them very recently. Still, with no signs of a body, you continue to search the room for clues to lead you to the golden skull.\n Soon, your torch reveals a new, open doorway at the back of the room, appearing to lead to a spiraling stairway going down into the stronghold's depths.\n Will you Continue forward? Or Return to the first hallway?\n Choose to Return or Continue: ");
+            Console.Write("Choice: ");
+            choiceFifteen = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch(choiceFifteen)
+            {
+                case "Continue":
+                case "continue":
+                    {
+                        Console.WriteLine("Why would you go back now? Continuing to the back of the room, you make your way into the unlit stairwell, spiraling down into the darkness.\n The blood trail also goes down the stony stairs. You'll soon confront whoever, or whatever this wounded thing is.\n Press ENTER to continue.");
+                        Console.ReadLine();
+                        Console.Clear();
+                        strongholdShadowBasement();
+                        break;
+                    }
+                case "Return":
+                case "return":
+                    {
+                        Console.WriteLine("In a rare moment of self-reflection, you realize that, maybe entering the darkest room full of debris and blood wasn't the best idea.\n Maybe it would be wise to access both rooms before making a choice!\n You begin to backtrack, only to find the door you entered had been silently shut, and sealed, from the other side!\n Angirly, you bash on the door, demanding to be let out. However, the door holds, and in the middle of your tantrum, you don't hear the shadowy figure slip in behind you.\n Before you know it, your throat is slit, and you fall to the ground, drowning in your own blood.\n This is the end of Levi the Barbarian...");
+                        Console.ReadLine();
+                        gameOver("What? No loot? Well, that " + chosenWeapon.name + " of yours might sell for something...");
+                        break;
+                    }
+            }
+        }
+        public void strongholdShadowBasement()
+        {
+            
+            
+            Console.ReadLine();
+            Console.Clear();
+            
         }
         public void gameOver(string deathText)
         {
