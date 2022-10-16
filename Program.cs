@@ -1051,10 +1051,58 @@ namespace LevitheBarbarian
         public void strongholdShadowBasement()
         {
             
+            Console.WriteLine("The winding, narrow stairs have led you to another open door, this time appearing to lead into some sort of dungeon.\n Peering inside, you are met with the sight of many barred rooms, and the remains of long forgotten prisoners, now nothing but bone and tatters.\n The iron bars appear brittle with extreme age, but no apparent valuables can be seen within each cell you pass. However, there is a light at the end of the room, the embers of a dying torch lay on the cold, stone floor, illuminating the dark blood spatter.\n Whoever left the blood trail must be close. Gripping your " + chosenWeapon.name + " tightly, you step past the dying torch and push open the door...\n revealing a figure in the shadows!\n Press ENTER to continue ");
+            Console.ReadLine();
+            Console.Clear();
+            strongholdShadowBasementPartTwo();
             
+        }
+        public void strongholdShadowBasementPartTwo()
+        {
+
+            Console.WriteLine("'State you name before I smash in your face!' You demand of the figure while raising your " + chosenWeapon.name + ".\n Your torch reveals the figure, a wounded man with short, dark hair in stylish leather, tightly wrapping a gaping wound in his side. 'Hold that light steady, will ya?' he asks.\n You angirly approach, shaking your " + chosenWeapon.name + " at the man. 'You do what I say! No funny business.'\n The man responds with a roguish grin and a nod, wincing as he tightens the final wraps of linen over the bloody hole in his side.\n 'Thanks, friend.' he says.'The name's Westen. You here looking for the treasure too?'\n You glare at the man, and finally take in your surroundings.\n This is a small room with no cells. The man sits at a near-collapsed wooden desk, and several empty storage containers cover the grimy stone walls.\n This must've been the warden's or executioner's office.\n Press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+            strongholdShadowBasementMeetWesten();
+
+        }
+        public void strongholdShadowBasementMeetWesten()
+        {
+            string choiceSixteen;
+            Console.WriteLine("'Westen?', you grunt. 'What sort of name is that?'\n 'One of a man who seeks the rarest riches of the world.'\n 'One of a man who nearly bled out in the dark', you sneer.\n 'True, true. But you still haven't answered me. Are you also here for the great treasure?'\n You consider how to answer this for a moment. Normally, you'd be all over loot like a goblin loose in a bank. However, you're on a sworn quest for the shaman.\n How will you answer. Will you LIE or tell the TRUTH?\n");
+            Console.Write("Choice: ");
+            choiceSixteen = Console.ReadLine().ToLower();
+            Console.Clear();
+            switch(choiceSixteen)
+            {
+                case "Lie":
+                case "lie":
+                    {
+                        Console.WriteLine("You decide that this bleeding stranger has no need to know of your quest or intentions. 'I'm just an explorer seeking riches, like you. My name is...Trag'.\n Westen stares blankly at you for a moment. 'I see. Trag, is it? Well, help me up. I can't fight after this wound, but I can show you where the traps are.'\n What an excellent idea! You think to yourself. However, it will be the last thing you ever think of.\n Helping Westen to his feet, in one fluid motion, he pulls out a dagger, and drives it through your jugular before you have time to register the attack. Falling to the floor, you soon bleed out, listening to Westen walk away.\n 'You shouldn't have lied to me, friend! A liar can always spot another liar!' are the last words you ever hear.\n Press ENTER to continue");
+                        Console.ReadLine();
+                        gameOver("What? No loot? Well, that " + chosenWeapon.name + " of yours might sell for something...");
+                        break;
+                    }
+                case "Truth":
+                case "truth":
+                    {
+                        Console.WriteLine("You decide that there's no need to lie to a weak, bleeding stranger, especially one who may know what dangers you're about to face.\n 'I am Levi the Barbarian, and I'm on a quest to find the golden skull. Take what you want, but the skull is mine.'\n Hearing this, Westen's eyes gleam the glint of avarice.'Let's work together, friend. It seems only right. Besides, I know the safe path forward and you don't. Let's help each other.'\n Reluctantly, you agree.\n 'Now', Westen states, 'help me up, won't you?' The lean man extends a hand and a fake smile. Maybe that's just a trick of the light?\n sheathing your " + chosenWeapon.name + " you extend your bulky hand and help the man to his feet. Hopefully, this won't be the death of you.\n Press ENTER to continue ");
+                        Console.ReadLine();
+                        Console.Clear();
+                        strongholdShadowBasementWestenPath();
+                        break;
+                    }
+            }
+
+        }
+        public void strongholdShadowBasementWestenPath()
+        {
+
+            Console.WriteLine("");
             Console.ReadLine();
             Console.Clear();
             
+
         }
         public void gameOver(string deathText)
         {
