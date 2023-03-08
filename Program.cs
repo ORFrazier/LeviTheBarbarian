@@ -1098,12 +1098,13 @@ namespace LevitheBarbarian
         public void strongholdShadowBasementWestenPath()
         {
 
-            Console.WriteLine("'Well!' exclaims your new partner,'I for one am glad to be working with such a capable partner. Now, use those muscles of yours over here!\n Curiously, Westen approaches the back of the room, rubbing himself on the wall as he feels around for something. Catching a loose brick with his hand, he pulls it away from the wall.   ");
+            Console.WriteLine("'Well!' exclaims your new partner,'I for one am glad to be working with such a capable partner. Now, use those muscles of yours over here!\n Curiously, Westen approaches the back of the room, patting down the wall as if feeling around for something. Catching a loose brick with his hand, he pulls it away from the wall.   ");
             Console.ReadLine();
             Console.Clear();
             
 
         }
+
         public void gameOver(string deathText)
         {
             Console.BackgroundColor = ConsoleColor.Black;
